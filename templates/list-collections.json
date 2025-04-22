@@ -1,0 +1,569 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "heading": {
+      "type": "heading-template",
+      "blocks": {
+        "8a07976b-2d4e-4066-ad3b-2d7a9e79fae0": {
+          "type": "1",
+          "settings": {
+            "heading": "",
+            "fontf": "inherit",
+            "text_cl": "#ffffff",
+            "text_fs": 20,
+            "text_lh": 20,
+            "text_fw": 500,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 5,
+            "hidden_mobile": false,
+            "text_fs_mb": 20,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 5
+          }
+        }
+      },
+      "block_order": [
+        "8a07976b-2d4e-4066-ad3b-2d7a9e79fae0"
+      ],
+      "disabled": true,
+      "settings": {
+        "use_specify_image": true,
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 54,
+        "padding": 50,
+        "paddingmb": 50,
+        "mg_b": 60,
+        "mg_bmb": 40,
+        "content_align": "t4s-text-center",
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
+    "collections_list_iEriKB": {
+      "type": "collections-list",
+      "blocks": {
+        "collection_item_Uxrdab": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "linen-canopy1",
+            "image": "shopify://shop_images/pale_pink8951_9e19a217-39d6-43ec-a5d7-b80978a9335d.jpg",
+            "icon": "las la-gem",
+            "collection_title": "Linen Canopy",
+            "collection_link": "shopify://collections/linen-canopy1"
+          }
+        },
+        "collection_item_MA3rkn": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "linen-curtains",
+            "icon": "las la-gem",
+            "collection_title": "Linen Curtains",
+            "collection_link": "shopify://collections/linen-curtains"
+          }
+        },
+        "collection_item_HH9JpL": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "muslin-bed-canopy-1",
+            "icon": "las la-gem",
+            "collection_title": "Muslin Canopy",
+            "collection_link": "shopify://collections/muslin-bed-canopy-1"
+          }
+        },
+        "collection_item_DregPi": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "muslin-curtains",
+            "image": "shopify://shop_images/DSC_66411_3340d2af-0b96-46be-95d6-4c775537a9ce.jpg",
+            "icon": "las la-gem",
+            "collection_title": "Muslin Curtains",
+            "collection_link": "shopify://collections/muslin-curtains"
+          }
+        },
+        "collection_item_7H7LCc": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "teepee-tents",
+            "image": "shopify://shop_images/71_03003f96-d0a9-4c65-a1d7-85828c8f1214.png",
+            "icon": "Teepee Tents",
+            "collection_title": "Teepee Tents",
+            "collection_link": "shopify://collections/teepee-tents"
+          }
+        },
+        "collection_item_kHETJK": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "leaf-mats",
+            "image": "shopify://shop_images/DSC_6506.jpg",
+            "icon": "Leaf Mats",
+            "collection_title": "Leaf Mats",
+            "collection_link": "shopify://collections/leaf-mats"
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_Uxrdab",
+        "collection_item_MA3rkn",
+        "collection_item_HH9JpL",
+        "collection_item_DregPi",
+        "collection_item_7H7LCc",
+        "collection_item_kHETJK"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "head_btn_label": "View All",
+        "head_btn_url": "",
+        "head_btn_icon": false,
+        "head_btn_style": "default",
+        "head_btn_size": "medium",
+        "head_btn_cl": "dark",
+        "head_btn_effect": "default",
+        "head_btn_hidden_mb": false,
+        "collection_des": "1",
+        "title_cl": "#ffffff",
+        "title_cl_hover": "#222222",
+        "subtitle_cl": "#878787",
+        "count_cl": "#222222",
+        "border_cl": "#e5e5e5",
+        "collection_subtitle": "Products",
+        "open_link": "_self",
+        "source": "image",
+        "space_bottom": 12,
+        "space_bottom_tb": 20,
+        "space_bottom_mb": 6,
+        "border": false,
+        "item_pd": 5,
+        "item_rd": 0,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratio1_1",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout_des": "1",
+        "col_dk": "3",
+        "col_tb": "2",
+        "col_mb": "1",
+        "space_h_item": "10",
+        "space_v_item": "30",
+        "space_h_item_mb": "15",
+        "space_v_item_mb": "30",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_pos": "default",
+        "btn_vi": "always",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 7,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,40px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "collections_list_K8gfCt": {
+      "type": "collections-list",
+      "blocks": {
+        "collection_item_yR7Hit": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "teepee-tents",
+            "image": "shopify://shop_images/71.png",
+            "icon": "las la-gem",
+            "collection_title": "Teepee Tents",
+            "collection_link": "shopify://collections/teepee-tents"
+          }
+        },
+        "collection_item_bHrrif": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "muslin-curtains",
+            "image": "shopify://shop_images/DSC_66411_3340d2af-0b96-46be-95d6-4c775537a9ce.jpg",
+            "icon": "las la-gem",
+            "collection_title": "Muslin Curtains",
+            "collection_link": "shopify://collections/muslin-curtains"
+          }
+        },
+        "collection_item_DHjr46": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "leaf-mats",
+            "image": "shopify://shop_images/DSC_6506.jpg",
+            "icon": "las la-gem",
+            "collection_title": "Leaf Mats",
+            "collection_link": "shopify://collections/leaf-mats"
+          }
+        },
+        "collection_item_Y3RDU9": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "inventory",
+            "image": "shopify://shop_images/23.png",
+            "icon": "las la-gem",
+            "collection_title": "Inventory",
+            "collection_link": "shopify://collections/inventory"
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_yR7Hit",
+        "collection_item_bHrrif",
+        "collection_item_DHjr46",
+        "collection_item_Y3RDU9"
+      ],
+      "disabled": true,
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "head_btn_label": "View All",
+        "head_btn_url": "",
+        "head_btn_icon": false,
+        "head_btn_style": "default",
+        "head_btn_size": "medium",
+        "head_btn_cl": "dark",
+        "head_btn_effect": "default",
+        "head_btn_hidden_mb": false,
+        "collection_des": "1",
+        "title_cl": "#ffffff",
+        "title_cl_hover": "#222222",
+        "subtitle_cl": "#878787",
+        "count_cl": "#222222",
+        "border_cl": "#e5e5e5",
+        "collection_subtitle": "Products",
+        "open_link": "_self",
+        "source": "image",
+        "space_bottom": 6,
+        "space_bottom_tb": 0,
+        "space_bottom_mb": 7,
+        "border": false,
+        "item_pd": 0,
+        "item_rd": 0,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratio1_1",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout_des": "1",
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "1",
+        "space_h_item": "20",
+        "space_v_item": "10",
+        "space_h_item_mb": "20",
+        "space_v_item_mb": "10",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_pos": "default",
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "8b8e32c0-23d6-4b50-9356-1f707380d72f": {
+          "type": "collection",
+          "settings": {
+            "collection": "linen-canopy1",
+            "collection_title": "Women"
+          }
+        },
+        "2363b965-b170-4eef-beda-9fcbd426bb8a": {
+          "type": "collection",
+          "settings": {
+            "collection": "men",
+            "collection_title": "Men"
+          }
+        },
+        "3cf3b5de-76cf-4462-96cd-12be5d86bd88": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "collection_title": "Accessories"
+          }
+        },
+        "23753dbb-bdea-49f5-9599-1356f824405e": {
+          "type": "collection",
+          "settings": {
+            "collection": "shoes",
+            "collection_title": "Footwear"
+          }
+        },
+        "0c6c4144-65af-4492-9e04-c54bb9533523": {
+          "type": "collection",
+          "settings": {
+            "collection": "default",
+            "collection_title": "Tops"
+          }
+        },
+        "3819762b-01e1-42a2-9ff2-3a58b005b4a6": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale",
+            "collection_title": "Sale"
+          }
+        },
+        "collection_kphpqV": {
+          "type": "collection",
+          "settings": {
+            "collection": "leaf-mats",
+            "image": "shopify://shop_images/white8669_8a4452fd-a077-42af-984a-3255521dfbf8.jpg",
+            "collection_title": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "8b8e32c0-23d6-4b50-9356-1f707380d72f",
+        "2363b965-b170-4eef-beda-9fcbd426bb8a",
+        "3cf3b5de-76cf-4462-96cd-12be5d86bd88",
+        "23753dbb-bdea-49f5-9599-1356f824405e",
+        "0c6c4144-65af-4492-9e04-c54bb9533523",
+        "3819762b-01e1-42a2-9ff2-3a58b005b4a6",
+        "collection_kphpqV"
+      ],
+      "disabled": true,
+      "settings": {
+        "cat_design": "1",
+        "title_cl": "#ffffff",
+        "title_cl_hover": "#222222",
+        "subtitle_cl": "#222222",
+        "count_cl": "#222222",
+        "border_cl": "#e5e5e5",
+        "display_type": "all",
+        "limit": 6,
+        "layout_des": "2",
+        "col_dk": "3",
+        "col_tb": "3",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "space_bottom": 15,
+        "space_bottom_mb": 15,
+        "border": false,
+        "item_pd": 0,
+        "item_rd": 0,
+        "img_effect": "zoom",
+        "b_effect": "border-run",
+        "image_ratio": "t4s_ratio1_1",
+        "image_size": "t4s_cover",
+        "image_position": "t4s_position_8",
+        "use_pagination": "load-more",
+        "enable_bar_lm": true,
+        "btn_icon": false,
+        "button_style": "default",
+        "btns_size": "large",
+        "btns_cl": "primary",
+        "button_effect": "fade",
+        "btn_pos": "t4s-text-center",
+        "pr_txt": "products",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,80px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,50px,",
+        "pd_mb": ""
+      }
+    },
+    "collections_list_NCqTy3": {
+      "type": "collections-list",
+      "blocks": {
+        "collection_item_LPKp83": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "icon": "las la-gem",
+            "collection_title": "Collection",
+            "collection_link": ""
+          }
+        },
+        "collection_item_GPNbQf": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "icon": "las la-gem",
+            "collection_title": "Collection",
+            "collection_link": ""
+          }
+        },
+        "collection_item_J6Q4JL": {
+          "type": "collection_item",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "icon": "las la-gem",
+            "collection_title": "Collection",
+            "collection_link": ""
+          }
+        },
+        "collection_item_E7RUrb": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "inventory",
+            "image": "shopify://shop_images/il_fullxfull.2686374773_qqqd_10b0cec9-9403-4651-9929-f9c8a45e60ee.jpg",
+            "icon": "las la-gem",
+            "collection_title": "Inventory",
+            "collection_link": "shopify://collections/inventory"
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_LPKp83",
+        "collection_item_GPNbQf",
+        "collection_item_J6Q4JL",
+        "collection_item_E7RUrb"
+      ],
+      "disabled": true,
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "head_btn_label": "View All",
+        "head_btn_url": "",
+        "head_btn_icon": false,
+        "head_btn_style": "default",
+        "head_btn_size": "medium",
+        "head_btn_cl": "dark",
+        "head_btn_effect": "default",
+        "head_btn_hidden_mb": false,
+        "collection_des": "1",
+        "title_cl": "#ffffff",
+        "title_cl_hover": "#222222",
+        "subtitle_cl": "#878787",
+        "count_cl": "#222222",
+        "border_cl": "#e5e5e5",
+        "collection_subtitle": "Products",
+        "open_link": "_self",
+        "source": "image",
+        "space_bottom": 20,
+        "space_bottom_tb": 20,
+        "space_bottom_mb": 10,
+        "border": false,
+        "item_pd": 0,
+        "item_rd": 0,
+        "img_effect": "none",
+        "b_effect": "none",
+        "image_ratio": "ratio1_1",
+        "image_size": "cover",
+        "image_position": "8",
+        "layout_des": "1",
+        "col_dk": "3",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "10",
+        "space_v_item_mb": "10",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "nav_btn": false,
+        "btn_pos": "default",
+        "btn_vi": "hover",
+        "btn_owl": "default",
+        "btn_shape": "none",
+        "btn_cl": "dark",
+        "btn_size": "small",
+        "btn_hidden_mobile": false,
+        "nav_dot": false,
+        "dot_owl": "default",
+        "dots_cl": "dark",
+        "dots_round": true,
+        "dots_space": 10,
+        "dots_hidden_mobile": false,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "collections_list_iEriKB",
+    "collections_list_K8gfCt",
+    "main",
+    "collections_list_NCqTy3"
+  ]
+}
