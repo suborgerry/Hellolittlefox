@@ -380,6 +380,18 @@ ol, ul {
     --li-pl: 17px;
 }
 
+.t4s-announcement-bar__item p strong {
+  color: #FF4E00;
+}
+
+.header_nav_icons {
+  margin-right: 24px;
+}
+
+.t4s-nav__ul>li> a {
+  text-transform: uppercase;
+}
+
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
