@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="{{ 'swiper-slider.css' | asset_url  }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Slider main container -->
+<div class="swiper swiper_slider_custom" id="swiper_{{ section.id }}">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {% for slide in section.blocks %}
+        <div class="swiper-slide">
+            <picture>
+                <source
+                    media="(max-width: 990px)"
+                    srcset="{{ slide.settings.slide_image_mobile | image_url: width: 990 }}"
+                >
+                <img 
+                    src="{{ slide.settings.slide_image | image_url: width: 1920 }}" 
+                    alt="{{ slide.settings.slide_image.alt | escape }}"
+                    width="100%"
+                    height="auto"
+                >
+            </picture>
+            <div class="slider_content">
+                <p class="slider_content_title">{{ slide.settings.title }}</p>
+                <p class="slider_content_subtitle">{{ slide.settings.sub_title }}</p>
+                <div class="slider_content_text desc">{{ slide.settings.text }}</div>
+            </div>
+            <div class="slider_content_text mob">{{ slide.settings.text }}</div>
+        </div>
+    {% endfor %}
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script defer>
+    (() => {
+        const swiper = new Swiper('#swiper_{{ section.id }}', {
+            loop: true,
+            slidesPerView: 1,
+            pagination: {
+            el: '.swiper-pagination',
+            autoplay: {
+             delay: 5000,
+            },
+            }
+        });
+    })();
+</script>
+<script defer src="{{ 'swiper-slider.js' | asset_url }}"></script>
+
+{% schema %}
+{
+    "name": "Swiper Slider",
+    "class": "swiper_cliser",
+    "settings": [],
+    "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "slide_image",
+                    "label": "Slide Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "slide_image_mobile",
+                    "label": "Slide Image mobile"
+                },
+                {
+                    "type": "inline_richtext",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Title"
+                },
+                {
+                    "type": "inline_richtext",
+                    "id": "sub_title",
+                    "label": "Sub Title",
+                    "default": "Sub Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text",
+                    "default": "<p>Text</p>"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Swiper Slider"
+        }
+    ]
+}
+{% endschema %}
