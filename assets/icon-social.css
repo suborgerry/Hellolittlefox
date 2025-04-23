@@ -33,7 +33,8 @@
 	color: var(--text-color);
 	background-color: transparent;
     border-color: var(--text-color);
-    border-radius: var(--bd-radius)
+    border-radius: var(--bd-radius);
+	text-transform: capitalize;
 }
 .t4s-socials.t4s-setts-color-true a {
 	color: var(--cl);
@@ -45,6 +46,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	border: none;
+	margin-right: 20px;
 }
 .t4s-socials a svg {
 	height: 18px;
@@ -132,7 +134,8 @@
 	justify-content: flex-start;
 }
 .t4s-text-center .t4s-socials {
-	justify-content: center;
+	/* justify-content: center; */
+	align-items: flex-start;
 }
 .t4s-text-end .t4s-socials {
 	justify-content: flex-end;
@@ -145,7 +148,8 @@
 		justify-content: center;
 	}
 	.t4s-text-md-end .t4s-socials {
-		justify-content: flex-end;
+		/* justify-content: flex-end; */
+		flex-direction: column;
 	}
 }
 @media(min-width: 1025px) {

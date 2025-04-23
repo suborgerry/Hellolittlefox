@@ -4562,3 +4562,11 @@ shopify-payment-terms {
       max-width: 100%;
   }
 }
+
+.t4s-footer-content .t4s-img-child img {
+  border-radius: 12px;
+}
+
+.t4s-footer .t4s-img-child {
+  display: flex;
+}

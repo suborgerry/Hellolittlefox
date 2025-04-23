@@ -6,7 +6,8 @@
 .t4s-newsletter-parent .t4s-footer-title,
 .t4s-socials-title {
 	font-size: var(--heading-fs);
-	line-height: var(--heading-lh);
+	/* line-height: var(--heading-lh); */
+	text-align: initial;
 	font-weight: var(--heading-fw);
 	letter-spacing: var(--heading-ls);
 	color: var(--heading-cl);
@@ -46,6 +47,7 @@
 	color: var(--text-cl);
 	font-size: var(--text-fs);
 	font-weight: var(--text-fw);
+	justify-content: flex-end;
 }
 .t4s-footer a,
 .t4s-footer-menu ul li a {
