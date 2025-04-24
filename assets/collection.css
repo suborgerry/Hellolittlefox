@@ -7,6 +7,7 @@
 .t4s-collection-item .t4s_ratio {
     --aspect-ratioapt: 4/3;
     overflow: hidden;
+    aspect-ratio: 48 / 34;
 }
 .t4s-collection-item .t4s_ratio {
     border-radius: var(--item-rd);
@@ -219,9 +220,17 @@
     font-weight: 400;
     box-shadow: 0 0 0;
     padding: 10px;
-    background-color: var(--bg-color);
+    background-color: #E0EBE380;
+    backdrop-filter: blur(4px);
     height: auto;
-    min-height: 44px;
+    min-height: 115px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .t4s-coll-style-10.t4s-col-6 {
+        width: 100% !important;
+    }
 }
 
 .t4s-collection-border-true .t4s-coll-style-10 .t4s-cate-wrapper {
@@ -230,9 +239,9 @@
     right: 1px;
 }
 .t4s-coll-style-10 .t4s-cat-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
-    color: var(--color);
+    color: #000;
     width: 100%;
     background-color: transparent;
 }
@@ -468,9 +477,10 @@ a.t4s-loadpreview {
 }
 @media(max-width: 480px) {
     .t4s-collection-item .t4s-cate-wrapper {
-        max-width: 90%;
+        /* max-width: 90%;
         margin: auto;
-        min-width: 100px;
+        min-width: 100px; */
+        min-height: 83px;
     }
     .t4s-coll-style-5 .t4s-cate-wrapper,
     .t4s-coll-style-7 .t4s-cate-wrapper,

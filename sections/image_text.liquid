@@ -103,7 +103,7 @@
                     <div class="t4s-image-text-content t4s-text-{{bk_stts.txt_align}} t4s-shadow-wrap" style="--imtxt-subhd-color:{{bk_stts.subhd_color}};--imtxt-hd-color:{{bk_stts.hd_color}};--imtxt-des-color:{{bk_stts.des_color}}">
                         {%- if bk_stts.sub_heading != blank -%}<p class="t4s-image-text-subheading t4s-fs-md-{{text_size[1]}} t4s-fs-15">{{bk_stts.sub_heading}}</p>{%- endif -%}
                         {%- if bk_stts.heading != blank -%}<h3 class="t4s-image-text-heading t4s-fs-md-{{text_size[0]}} t4-fs-30" >{{bk_stts.heading}}</h3>{%- endif -%}
-                        {%- if bk_stts.text -%}<div class="t4s-image-text-des t4-fs-md-{{text_size[1]}} t4s-fs-15 t4s-rte">{{bk_stts.text}}</div>{%- endif -%}
+                        {%- if bk_stts.text -%}<div class="t4s-image-text-des t4-fs-md-{{text_size[1]}} t4s-fs-20 t4s-rte">{{bk_stts.text}}</div>{%- endif -%}
                         {%- if bk_stts.button_link != blank and bk_stts.button_label != blank -%}
                         {%- assign use_button = true -%}
                             <a class="t4s-btn t4s-btn-base t4s-btn-style-{{button_style}} t4s-btn-size-{{bk_stts.btn_size}} t4s-btn-color-{{bk_stts.btn_cl}} {% if button_style == 'default' or button_style == 'outline'%}t4s-btn-effect-{{bk_stts.button_effect}} t4s-btn-radius-{{bk_stts.btn_bdr}}{% endif %}" href="{{bk_stts.button_link}}"  target="{{bk_stts.open_link}}">{{bk_stts.button_label}} {%- if bk_stts.btn_icon -%}<svg class="t4s-btn-icon"><use xlink:href="#t4s-icon-btn"></use></svg>{%- endif -%}</a>
@@ -127,7 +127,7 @@
     {
       "name": "Image with text",
       "tag": "section",
-      "class": "t4s-section t4s-section-all t4s_tp_flickity",
+      "class": "t4s-section t4s-section-all t4s_tp_flickity t4s_custom_image_with_text",
       "settings": [
         {
             "type": "header",

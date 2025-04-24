@@ -84,7 +84,7 @@
                 {{ 'image' | placeholder_svg_tag: 't4s-placeholder-svg t4s-svg-bg1 t4s-obj-eff' }}
               {%- endif -%}
             </{{ARRhtml[0]}}>
-            <div class="t4s-banner-content t4s-content-position t4s-pa t4s-{{bk_stts.content_width}} t4s-pe-none t4s-text-md-{{bk_stts.content_align}} t4s-text-{{bk_stts.content_align_mobile}} t4s-bg-content-{{bk_stts.bg_content_bl}} t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" style="--time-animation:{{bk_stts.time_animation}}s; {%- render 'position_content',ch_pos:bk_stts.ch_pos,cv_pos:bk_stts.cv_pos,ch_pos_mb:bk_stts.ch_pos_mb,cv_pos_mb:bk_stts.cv_pos_mb,append_bg_content_style:append_bg_content_style,append_bg_border_style:append_bg_border_style -%}">
+            <div class="t4s-banner-content t4s-col-lg-{{bk_stts.col_dk}} t4s-col-md-{{bk_stts.col_tb}} t4s-col-{{bk_stts.col_mb}} t4s-content-position {% if bk_stts.position_absolute %}t4s-pa{% endif %} t4s-{{bk_stts.content_width}} t4s-pe-none t4s-text-md-{{bk_stts.content_align}} t4s-text-{{bk_stts.content_align_mobile}} t4s-bg-content-{{bk_stts.bg_content_bl}} t4s-br-content-{{bk_stts.border_bl}} t4s-br-style-{{bk_stts.br_style}}" style="--time-animation:{{bk_stts.time_animation}}s; {%- render 'position_content',ch_pos:bk_stts.ch_pos,cv_pos:bk_stts.cv_pos,ch_pos_mb:bk_stts.ch_pos_mb,cv_pos_mb:bk_stts.cv_pos_mb,append_bg_content_style:append_bg_content_style,append_bg_border_style:append_bg_border_style -%}">
               {%- for block in se_blocks offset:index2 -%}
                 {%- assign index2 = index2|plus:1 -%}
                 {%- assign bk_stts = block.settings -%}
@@ -1127,10 +1127,144 @@
                 "info":"If you want to line break, please add a <br> tag in the text"
             },
             {
+            "type": "select",
+            "id": "col_dk",
+            "label": "Item width",
+            "default": "6",
+            "options": [
+              {
+                "value": "12",
+                "label": "100%"
+              },
+              {
+                "value": "9",
+                "label": "75%"
+              },
+              {
+                "value": "8",
+                "label": "66.66%"
+              },
+              {
+                "value": "7",
+                "label": "58.33%"
+              },
+              {
+                "value": "6",
+                "label": "50%"
+              },
+              {
+                "value": "5",
+                "label": "41.66%"
+              },
+              {
+                "value": "4",
+                "label": "33.33%"
+              },
+              {
+                "value": "3",
+                "label": "25%"
+              },
+              {
+                "value": "2",
+                "label": "16.67%"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "col_tb",
+            "label": "Item width (Tablet)",
+            "default": "6",
+            "options": [
+              {
+                "value": "12",
+                "label": "100%"
+              },
+              {
+                "value": "9",
+                "label": "75%"
+              },
+              {
+                "value": "8",
+                "label": "66.66%"
+              },
+              {
+                "value": "7",
+                "label": "58.33%"
+              },
+              {
+                "value": "6",
+                "label": "50%"
+              },
+              {
+                "value": "5",
+                "label": "41.66%"
+              },
+              {
+                "value": "4",
+                "label": "33.33%"
+              },
+              {
+                "value": "3",
+                "label": "25%"
+              },
+              {
+                "value": "2",
+                "label": "16.67%"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "col_mb",
+            "label": "Item width (Mobile)",
+            "default": "12",
+            "options": [
+              {
+                "value": "12",
+                "label": "100%"
+              },
+              {
+                "value": "9",
+                "label": "75%"
+              },
+              {
+                "value": "8",
+                "label": "66.66%"
+              },
+              {
+                "value": "7",
+                "label": "58.33%"
+              },
+              {
+                "value": "6",
+                "label": "50%"
+              },
+              {
+                "value": "5",
+                "label": "41.66%"
+              },
+              {
+                "value": "4",
+                "label": "33.33%"
+              },
+              {
+                "value": "3",
+                "label": "25%"
+              }
+            ]
+          },
+            {
                 "type":"checkbox",
                 "id":"remove_br_tag",
                 "label":"Remove <br> tag on mobile",
                 "default":false
+            },
+            {
+                "type":"checkbox",
+                "id":"position_absolute",
+                "label":"Position absolute",
+                "default":true
             },
             {
               "type": "select",

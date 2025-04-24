@@ -34,9 +34,17 @@
 .t4s-fs-15 {
     font-size: 15px;
 }
+
+.t4s-fs-20 {
+    font-size: 16px;
+}
+
 @media (min-width: 768px){
     .t4-fs-md-30{
         font-size: 30px;
+    }
+    .t4s-fs-20 {
+        font-size: 16px;
     }
     .t4s-fs-md-15 {
         font-size: 15px;
@@ -54,6 +62,16 @@
     .t4s-fs-md-18{
         font-size: 18px;
     }
+}
+
+@media (min-width: 990px){
+    .t4s-fs-20 {
+        font-size: 20px;
+    }
+}
+
+.t4s_custom_image_with_text .t4s_ratio img {
+    border-radius: 24px;
 }
 
 .t4s-image-text-overlap{

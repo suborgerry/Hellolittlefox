@@ -7,6 +7,17 @@
     -o-animation: bounceIn .5s ease;
     animation: bounceIn .5s ease;
 }
+
+@media screen and (min-width: 990px) {
+	.t4s-shipping-item {
+		max-width: 340px;
+	}
+
+	.t4s-shipping-list {
+		justify-content: space-between;
+	}
+}
+
 .t4s-shipping-list.t4s-shipping-icon-circle .t4s-shipping .t4s-shipping-icon {
 	border-radius: 100%;
 	overflow: hidden;
@@ -100,7 +111,7 @@
 	font-size: 48px;
 }
 .t4s-shipping-list.t4s-text-start .t4s-shipping .t4s-shipping-icon {
-	margin-right: 20px;
+	margin-right: 23px;
 }
 .t4s-shipping-list.t4s-text-end .t4s-shipping .t4s-shipping-icon {
 	margin-left: 20px;
@@ -125,11 +136,12 @@
     display: inline-flex;
 }
 .t4s-shipping .t4s-shipping-title {
-	font-size: 14px;
+	font-size: 16px;
 	color: var(--title-cl);
 	font-weight: 600;
 	margin-bottom: 0;
 	margin-top: 0;
+	text-transform: uppercase;
 }
 .t4s-shipping .t4s-shipping-icon,
 .t4s-shipping .t4s-shipping-content {
@@ -159,6 +171,9 @@
 .t4s-shipping .t4s-shipping-des p {
 	margin-bottom: 10px;
 	line-height: 24px;
+	color: var(--title-cl);
+	line-height: 1;
+	font-size: 10px;
 }
 .t4s-shipping .t4s-shipping-des p:last-child {
 	margin-bottom: 0;
@@ -181,9 +196,13 @@
 }
 @media (max-width: 767px) {
 	.t4s-shipping-list.t4s-text-start .t4s-shipping .t4s-shipping-icon {
-		margin-right: 10px;
+		margin-right: 26px;
 	}
 	.t4s-shipping.t4s-text-end .t4s-shipping-icon {
 		margin-left: 10px;
 	}
+}
+
+.t4s-shipping {
+	background-color: #E0EBE3;
 }

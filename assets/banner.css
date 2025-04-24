@@ -5,6 +5,12 @@
 	position: relative;
 	overflow: hidden;
 }
+
+.t4s-banner-content:not(.t4s-pa) {
+	position: relative;
+	/* width: 50%; */
+}
+
 .t4s-banner-content .img-child {
 	margin-bottom: var(--img-mgb);
 }

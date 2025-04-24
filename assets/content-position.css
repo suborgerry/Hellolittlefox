@@ -59,7 +59,7 @@
   .t4s-br-content-true[style*="--p-right:calc(100% - 100%)"] {
       right: var(--br-pd);
   } 
-  .t4s-content-position:not(.t4s-container)[style*="--p-left:50%"] {
+  .t4s-content-position:not(.t4s-container)[style*="--p-left:50%"]:not(.t4s-banner-content) {
       width: fit-content;
   }
   .t4s-content-position.t4s-box-content-square-true:not(.t4s-container)[style*="--p-left:50%"] {

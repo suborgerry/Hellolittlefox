@@ -215,7 +215,7 @@ box-shadow: 0 2px 10px rgb(54 54 54 / 15%);
 }
 .t4s-flicky-slider.t4s-slider-btn-style-outline .flickityt4s-button {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
 }
 .t4s-flicky-slider.t4s-slider-btn-style-simple {
   --slider-btn-background      : transparent;
@@ -437,10 +437,10 @@ box-shadow: 0 2px 10px rgb(54 54 54 / 15%);
 }
 
 .t4s-flicky-slider .flickityt4s-prev-next-button.previous {
-  left: calc(var(--flickity-btn-pos)/2);
+  left: calc(var(--flickity-btn-pos) * -0.65)
 }
 .t4s-flicky-slider .flickityt4s-prev-next-button.next {
-  right: calc(var(--flickity-btn-pos)/2);
+  right: calc(var(--flickity-btn-pos) * -0.65)
 }
 
 /* Dots fullwidth*/
