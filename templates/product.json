@@ -343,15 +343,36 @@
         "sidebar_pd": 10
       }
     },
+    "174552431977ee2ff9": {
+      "type": "apps",
+      "blocks": {
+        "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz": {
+          "type": "shopify://apps/reputon-etsy-reviews/blocks/carousel-widget-block.product/8df530b9-db50-44f9-a43b-c93c6bac56a9",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showProductPicture": true,
+            "showDate": true,
+            "showAvatar": true,
+            "fixedReviewsHeight": false
+          }
+        }
+      },
+      "block_order": [
+        "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz"
+      ],
+      "settings": {}
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
         "show": true,
-        "design_heading": "1",
+        "design_heading": "2",
         "heading_align": "t4s-text-center",
-        "top_heading": "You may also like",
+        "top_heading": "YOU MAY ALSO LIKE",
         "icon_heading": "las la-gem",
-        "top_subheading": "",
+        "top_subheading": "Top Sale in the week",
         "tophead_mb": 30,
         "product_des": "1",
         "show_vendor": false,
@@ -397,8 +418,73 @@
         "pd_mb": ""
       }
     },
+    "accordion_GHYNN8": {
+      "type": "accordion",
+      "blocks": {
+        "accor_item_jmVNG4": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tab 01",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+          }
+        },
+        "accor_item_qUz8Tf": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tab 02",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+          }
+        },
+        "accor_item_L7xmNW": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tab 03",
+            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accor_item_jmVNG4",
+        "accor_item_qUz8Tf",
+        "accor_item_L7xmNW"
+      ],
+      "name": "Accordion",
+      "settings": {
+        "design_heading": "2",
+        "heading_align": "t4s-text-center",
+        "top_heading": "FREQUENTLY ASKED QUESTIONS",
+        "icon_heading": "las la-gem",
+        "top_subheading": "Have a question ? We are here to help.",
+        "tophead_mb": 30,
+        "accor_des": "2",
+        "title_cl": "#222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "rgba(0,0,0,0)",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
     "recently-viewed-products": {
       "type": "recently_viewed",
+      "disabled": true,
       "settings": {
         "show": true,
         "design_heading": "1",
@@ -457,7 +543,9 @@
     "breadcrumb",
     "main",
     "sidebar",
+    "174552431977ee2ff9",
     "product-recommendations",
+    "accordion_GHYNN8",
     "recently-viewed-products"
   ]
 }
