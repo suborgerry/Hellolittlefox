@@ -278,7 +278,7 @@
               "social_size": "small",
               "bd_radius": 0,
               "use_color_set": true,
-              "icon_cl": "#fff",
+              "icon_cl": "#ffffff",
               "bg_cl": "#abc8b3",
               "space_h_item": "10",
               "space_v_item": "5",
@@ -405,7 +405,7 @@
               "remove_br_tag": false,
               "tag": "p",
               "fontf": "inherit",
-              "text_cl": "#fff",
+              "text_cl": "#ffffff",
               "text_fs": 12,
               "text_lh": 0,
               "text_fw": 400,
@@ -484,9 +484,9 @@
           "mgb_mb": 30,
           "text_fs": 16,
           "text_fw": 400,
-          "heading_cl": "#fff",
-          "text_cl": "#fff",
-          "link_cl": "#fff",
+          "heading_cl": "#ffffff",
+          "text_cl": "#ffffff",
+          "link_cl": "#ffffff",
           "link_hover_cl": "#ec0101",
           "border_cl": "#ffffff",
           "layout": "t4s-container-wrap",
@@ -1882,6 +1882,8 @@
       "facets": {
         "type": "facets",
         "settings": {
+          "disabled": true,
+          "make_static": true,
           "style_color_filter": "Color, color, Colour , colour",
           "style_tag_filter": "ss bb"
         }

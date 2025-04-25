@@ -140,6 +140,82 @@
         "pd_mb": ""
       }
     },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "filter_id": {
+          "type": "filter",
+          "settings": {
+            "style_filters": "left_side"
+          }
+        },
+        "740319a4-8e19-4c70-b8a9-ada7cf235cbc": {
+          "type": "layout",
+          "disabled": true,
+          "settings": {}
+        },
+        "30594d23-d644-4653-9545-9ff769d2e6ab": {
+          "type": "sortby",
+          "settings": {}
+        },
+        "facets_P4xBtQ": {
+          "type": "facets",
+          "settings": {
+            "disabled": false,
+            "make_static": true,
+            "style_color_filter": "Color, color, Colour , colour",
+            "style_tag_filter": "ss bb"
+          }
+        }
+      },
+      "block_order": [
+        "filter_id",
+        "740319a4-8e19-4c70-b8a9-ada7cf235cbc",
+        "30594d23-d644-4653-9545-9ff769d2e6ab",
+        "facets_P4xBtQ"
+      ],
+      "custom_css": [],
+      "settings": {
+        "show_desc": false,
+        "position_desc": "2",
+        "product_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "image_ratio": "ratio1_1",
+        "image_size": "cover",
+        "image_position": "8",
+        "content_align": "default",
+        "limit": 16,
+        "enable_listing": false,
+        "enable_listing_default": false,
+        "col_dk": "4",
+        "col_tb": "2",
+        "col_mb": "2",
+        "space_h_item": "30",
+        "space_v_item": "30",
+        "space_h_item_mb": "15",
+        "space_v_item_mb": "15",
+        "layout_des": "1",
+        "use_pagination": "load-more",
+        "enable_bar_lm": false,
+        "btn_icon": false,
+        "button_style": "bordered",
+        "btns_size": "extra-small",
+        "btns_cl": "custom1",
+        "button_effect": "default",
+        "btn_pos": "t4s-text-center",
+        "type_filters": "facets",
+        "layout": "t4s-se-container",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
     "heading_template": {
       "type": "heading-template",
       "blocks": {
@@ -232,72 +308,6 @@
         "code_cus_css": ".SectionID {\nbackground-color:red\n}"
       }
     },
-    "main": {
-      "type": "main-collection",
-      "blocks": {
-        "filter_id": {
-          "type": "filter",
-          "settings": {
-            "style_filters": "left_side"
-          }
-        },
-        "740319a4-8e19-4c70-b8a9-ada7cf235cbc": {
-          "type": "layout",
-          "disabled": true,
-          "settings": {}
-        },
-        "30594d23-d644-4653-9545-9ff769d2e6ab": {
-          "type": "sortby",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "filter_id",
-        "740319a4-8e19-4c70-b8a9-ada7cf235cbc",
-        "30594d23-d644-4653-9545-9ff769d2e6ab"
-      ],
-      "custom_css": [],
-      "settings": {
-        "show_desc": false,
-        "position_desc": "2",
-        "product_des": "1",
-        "show_vendor": false,
-        "use_cdt": false,
-        "image_ratio": "ratio1_1",
-        "image_size": "cover",
-        "image_position": "8",
-        "content_align": "default",
-        "limit": 16,
-        "enable_listing": false,
-        "enable_listing_default": false,
-        "col_dk": "4",
-        "col_tb": "2",
-        "col_mb": "2",
-        "space_h_item": "30",
-        "space_v_item": "30",
-        "space_h_item_mb": "15",
-        "space_v_item_mb": "15",
-        "layout_des": "1",
-        "use_pagination": "load-more",
-        "enable_bar_lm": false,
-        "btn_icon": false,
-        "button_style": "bordered",
-        "btns_size": "extra-small",
-        "btns_cl": "custom1",
-        "button_effect": "default",
-        "btn_pos": "t4s-text-center",
-        "type_filters": "facets",
-        "layout": "t4s-se-container",
-        "cl_bg": "",
-        "cl_bg_gradient": "",
-        "mg": ",,50px,",
-        "pd": "",
-        "mg_tb": "",
-        "pd_tb": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": ""
-      }
-    },
     "sidebar": {
       "type": "sidebar-collection",
       "blocks": {
@@ -367,8 +377,8 @@
   },
   "order": [
     "top",
-    "heading_template",
     "main",
+    "heading_template",
     "sidebar"
   ]
 }
