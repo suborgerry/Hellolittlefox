@@ -1879,6 +1879,13 @@
           "button_effect": "default"
         }
       },
+      "facets": {
+        "type": "facets",
+        "settings": {
+          "style_color_filter": "Color, color, Colour , colour",
+          "style_tag_filter": "ss bb"
+        }
+      },
       "heading-template": {
         "type": "heading-template",
         "blocks": {
