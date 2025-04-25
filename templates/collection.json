@@ -238,11 +238,12 @@
         "filter_id": {
           "type": "filter",
           "settings": {
-            "style_filters": "sidebar"
+            "style_filters": "left_side"
           }
         },
         "740319a4-8e19-4c70-b8a9-ada7cf235cbc": {
           "type": "layout",
+          "disabled": true,
           "settings": {}
         },
         "30594d23-d644-4653-9545-9ff769d2e6ab": {
@@ -266,7 +267,7 @@
         "image_size": "cover",
         "image_position": "8",
         "content_align": "default",
-        "limit": 15,
+        "limit": 16,
         "enable_listing": false,
         "enable_listing_default": false,
         "col_dk": "4",
@@ -286,7 +287,7 @@
         "button_effect": "default",
         "btn_pos": "t4s-text-center",
         "type_filters": "facets",
-        "layout": "t4s-container-fluid",
+        "layout": "t4s-se-container",
         "cl_bg": "",
         "cl_bg_gradient": "",
         "mg": ",,50px,",

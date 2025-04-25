@@ -68,24 +68,6 @@
             "collection_link": "shopify://collections/linen-canopy1"
           }
         },
-        "collection_item_MA3rkn": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "linen-curtains",
-            "icon": "las la-gem",
-            "collection_title": "Linen Curtains",
-            "collection_link": "shopify://collections/linen-curtains"
-          }
-        },
-        "collection_item_HH9JpL": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "muslin-bed-canopy-1",
-            "icon": "las la-gem",
-            "collection_title": "Muslin Canopy",
-            "collection_link": "shopify://collections/muslin-bed-canopy-1"
-          }
-        },
         "collection_item_DregPi": {
           "type": "collection_item",
           "settings": {
@@ -106,24 +88,21 @@
             "collection_link": "shopify://collections/teepee-tents"
           }
         },
-        "collection_item_kHETJK": {
+        "collection_item_HH9JpL": {
           "type": "collection_item",
           "settings": {
-            "collection": "leaf-mats",
-            "image": "shopify://shop_images/DSC_6506.jpg",
-            "icon": "Leaf Mats",
-            "collection_title": "Leaf Mats",
-            "collection_link": "shopify://collections/leaf-mats"
+            "collection": "inventory",
+            "icon": "las la-gem",
+            "collection_title": "Inventory",
+            "collection_link": "shopify://collections/inventory"
           }
         }
       },
       "block_order": [
         "collection_item_Uxrdab",
-        "collection_item_MA3rkn",
-        "collection_item_HH9JpL",
         "collection_item_DregPi",
         "collection_item_7H7LCc",
-        "collection_item_kHETJK"
+        "collection_item_HH9JpL"
       ],
       "settings": {
         "design_heading": "1",
@@ -161,7 +140,7 @@
         "image_size": "cover",
         "image_position": "8",
         "layout_des": "1",
-        "col_dk": "3",
+        "col_dk": "4",
         "col_tb": "2",
         "col_mb": "1",
         "space_h_item": "10",
