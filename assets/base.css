@@ -4818,6 +4818,11 @@ shopify-payment-terms {
   border-radius: 12px;
 }
 
+.t4s-footer-content a {
+  text-decoration: none;
+  border-bottom: 0 !important;
+}
+
 .t4s-footer .t4s-img-child {
   display: flex;
 }

@@ -112,7 +112,8 @@
 }
 .t4s-newsletter-parent[style*="--form-width:0px"] {
     width: 100%;
-    max-width: 100%;
+    max-width: 1170px;
+    margin: auto;
 } 
 .t4s-newsletter__inner {
 	border-radius: 46px;
