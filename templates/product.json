@@ -26,7 +26,7 @@
           "settings": {
             "txt_tr_pr": "none",
             "fnt_df_pr": "1",
-            "size_pr": 16,
+            "size_pr": 20,
             "fw_pr": 600,
             "lh_pr": 0,
             "ls_pr": 0,
@@ -56,8 +56,29 @@
             "review_liquid": "",
             "size_price_pr": 22,
             "fw_price_pr": 400,
-            "price_color": "#696969",
-            "price_sale_color": "#ec0101"
+            "price_color": "#222222",
+            "price_sale_color": "#ff4e00"
+          }
+        },
+        "inventory_qty_zGLDWa": {
+          "type": "inventory_qty",
+          "settings": {
+            "icon": "2",
+            "icon_name": "hourglass-half",
+            "ani": "none",
+            "stock": "3",
+            "qty": 10,
+            "total_items": 100,
+            "stock_from": 12,
+            "stock_to": 20,
+            "al": "start",
+            "mess": "Only [stock_number] few items left",
+            "size": 12,
+            "progress": false,
+            "wbar": 100,
+            "stock_bg_process": "#222222",
+            "bgten": "#222222",
+            "stock_bg": "#ffe8e8"
           }
         },
         "description": {
@@ -96,7 +117,7 @@
             "compare_color": "#222222",
             "compare_color_hover": "#abc8b3",
             "compare_color_active": "#222222",
-            "show_dynamic_checkout": false,
+            "show_dynamic_checkout": true,
             "btn_txt2": "3",
             "button_color_payment": "dark",
             "product_list": [],
@@ -110,6 +131,22 @@
           "type": "tab_des",
           "settings": {
             "title": "Description"
+          }
+        },
+        "tab_html_NXpCkP": {
+          "type": "tab_html",
+          "settings": {
+            "title": "Specification",
+            "content": "<p>Discover Precise Specification for Every Product.</p>",
+            "page": ""
+          }
+        },
+        "tab_html_GqLnyF": {
+          "type": "tab_html",
+          "settings": {
+            "title": "Shipping",
+            "content": "<p>Streamlined shipping solutions for a seamless customer experience.</p>",
+            "page": ""
           }
         },
         "html_3HebXB": {
@@ -199,9 +236,12 @@
         "title",
         "meta",
         "price_review",
+        "inventory_qty_zGLDWa",
         "description",
         "form",
         "95d4f334-8ea7-4cd2-b609-2373b1e848b8",
+        "tab_html_NXpCkP",
+        "tab_html_GqLnyF",
         "html_3HebXB",
         "23551ebc-3be1-40d6-81b2-30f03478cccb",
         "size_delivery_ask",
