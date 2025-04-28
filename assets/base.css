@@ -4613,6 +4613,9 @@ shopify policy
   .is--layout_wide { 
     max-width: 1600px !important;
   }
+  .is--layout_product { 
+    max-width: 1350px !important;
+  }
   .is--layout_full {
     max-width: 100% !important;
     width: 100%;
@@ -4803,9 +4806,9 @@ shopify-payment-terms {
     transition: opacity .25s,visibility;
 }
 
-.t4s-product-colors {
+/* .t4s-product-colors {
   display: none;
-}
+} */
 
 /* fix app shopify overflow */
 @media (max-width: 500px) {

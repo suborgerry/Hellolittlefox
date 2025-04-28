@@ -346,11 +346,11 @@ button.t4s-product-form__submit[disabled="disabled"]{
 .t4s-badge-price {
     color: var(--sale-badge-color);
     background-color: var(--sale-badge-background);
-    border-radius: 4px;
+    border-radius: 28px;
     padding: 4px 8px;
     margin: 0 5px;
     line-height: 1.2;
-    font-size: 12px;
+    font-size: 14px;
     position: relative;
     top: -3px;
     display: inline-block;
@@ -360,6 +360,10 @@ button.t4s-product-form__submit[disabled="disabled"]{
     color: var(--secondary-color);
     margin-bottom: 15px;
     font-size: 14px;
+}
+
+.t4s-count {
+  font-weight: 700;
 }
 
 /* t4s-product-form__buttons */
@@ -444,6 +448,12 @@ button.t4s-product-form__submit[disabled="disabled"]{
   text-align: right;
   padding-right: 15px;
 }
+
+.t4s-product-form__buttons .t4s-quantity-wrapper,
+.t4s-product-form__variants.is-btn-full-width__false .t4s-product-form__submit, .t4s-product-form__buttons .t4s-pr-wishlist, .t4s-product-form__buttons .t4s-pr-compare {
+  border-radius: 48px !important;
+}
+
 .t4s-product-form__buttons .t4s-pr-wishlist,
 .t4s-product-form__buttons .t4s-pr-compare{
     position: relative;
@@ -519,6 +529,12 @@ button.t4s-product-form__submit[disabled="disabled"]{
 .t4s-product-form__buttons .t4s-pr-compare.is--added {
   color: var(--compare-active-color);
   border-color: var(--compare-active-color);
+}
+
+.t4s-product_meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .t4s-product_meta a,
@@ -644,10 +660,14 @@ button.t4s-product-form__submit[disabled="disabled"]{
   line-height: var(--price-size);
   font-weight: var(--price-weight);
   color: var(--price-color);
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 .t4s-product__info-container .t4s-product-price ins{
   color: var(--price-sale-color);
   margin-left: 6px;
+  font-weight: 500;
   display: inline-block;
 }
 .t4s-product__info-container .t4s-product-price .t4s-labrl-sale span {
@@ -666,6 +686,9 @@ button.t4s-product-form__submit[disabled="disabled"]{
     font-size: 12px;
     position: relative;
     top: -3px;
+}
+.t4s-product__info-container .t4s-product-price del {
+  font-size: calc(var(--price-size) - 4px);
 }
 .t4s-form__product .t4s-product-price {
     margin-bottom: 15px;
