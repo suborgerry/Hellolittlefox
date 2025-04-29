@@ -51,6 +51,7 @@ t4s-selector-mode__circle  */
 }
 .t4s-swatch__list {
     margin: 10px -5px 0;
+    max-width: 397px;
 }
 .t4s-swatch__item {
     -ms-touch-action: manipulation;

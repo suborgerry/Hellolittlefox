@@ -38,7 +38,7 @@ assign listTyCurent2 = ''  -%}
 {%- if tabBlocks.size == 0 %}{% break %}{% endif -%}
 
 <div class="t4s-product-tabs-wrapper t4s-product-tabs-wrapper-{{section.id}} is--tab-design__{{tabs_design}} is--tab-design-mb__{{tabs_design_mb}} is--tab-layout__{{se_stts.tabs_layout_fix}} is--tab-position__{{se_stts.tabs_position}}">
-  <div class="t4s-container">
+  <div class="t4s-container t4s-container-tabs">
 
     {%- if request.design_mode -%}
     <div class="t4s-dev-tab-adm">{%- for type in tabBlocks -%}
