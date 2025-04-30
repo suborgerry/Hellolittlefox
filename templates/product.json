@@ -127,6 +127,21 @@
             "advance_pr_list": []
           }
         },
+        "properties_ri3BGh": {
+          "type": "properties",
+          "settings": {
+            "type": "radio",
+            "heading": "Add extra text on front: * (+$10.00)",
+            "options": "no, yes",
+            "required": false,
+            "show_at_checkout": true,
+            "visibility": "all",
+            "collection_based": [],
+            "type_based": "",
+            "tag_based": "",
+            "product_based": []
+          }
+        },
         "95d4f334-8ea7-4cd2-b609-2373b1e848b8": {
           "type": "tab_des",
           "settings": {
@@ -230,6 +245,10 @@
             "space_h_item_mb": "10",
             "space_v_item_mb": "2"
           }
+        },
+        "bundle_WVYa8q": {
+          "type": "bundle",
+          "settings": {}
         }
       },
       "block_order": [
@@ -239,6 +258,7 @@
         "inventory_qty_zGLDWa",
         "description",
         "form",
+        "properties_ri3BGh",
         "95d4f334-8ea7-4cd2-b609-2373b1e848b8",
         "tab_html_NXpCkP",
         "tab_html_GqLnyF",
@@ -249,7 +269,8 @@
         "754ad4a0-7308-4a3e-b325-e2f2c0b85d4c",
         "56e67368-7424-4d73-8f14-dacdda4c59be",
         "1e8c05dd-a0a8-4e7e-b9b1-6e3572ad24e3",
-        "94011ade-ec25-4d68-b37a-70660ede49dd"
+        "94011ade-ec25-4d68-b37a-70660ede49dd",
+        "bundle_WVYa8q"
       ],
       "custom_css": [],
       "settings": {
