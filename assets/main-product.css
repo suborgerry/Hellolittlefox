@@ -845,6 +845,7 @@ button.t4s-product__description_readm:hover {
 
 .custom-size-personalization .t4s-swatch__title {
   color: black;
+  text-transform: initial;
 }
 
 .custom-size-personalization {
@@ -873,10 +874,41 @@ button.t4s-product__description_readm:hover {
 }
 
 .t4s-product__bundle {
-  max-width: 396px;
+  max-width: 100%;
   padding: 23px 21px 13px 21px;
   border-radius: 24px;
   border: 1px solid #8787874D;
+}
+
+@media screen and (max-width: 768px) {
+  .t4s-product__bundle {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .t4s-product__bundle {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .t4s-product__bundle {
+    max-width: 396px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .t4s-product__info-container .t4s-product__bundle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .t4s-main-area>.t4s-product__bundle {
+    display: none;
+  }
 }
 
 .t4s-product__bundle-images {
@@ -884,11 +916,31 @@ button.t4s-product__description_readm:hover {
   column-gap: 28px;
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .t4s-product__bundle>div {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .t4s-product__bundle-images {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+
 .t4s-product__bundle-images img {
-  max-width: 100px;
+  max-width: 88px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 24px;
+}
+
+@media screen and (min-width: 990px) {
+  .t4s-product__bundle-images img {
+    max-width: 100px;
+  }
 }
 
 .t4s-product__bundle-info {
@@ -949,7 +1001,13 @@ button.t4s-product__description_readm:hover {
   font-weight: 700;
   width: 100%;
   padding: 15px;
-  margin-top: 58px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .t4s-product__bundle button {
+    margin-top: 58px;
+  }
 }
 
 .t4s-product__bundle:not(:has(input:checked)) button {
@@ -959,4 +1017,11 @@ button.t4s-product__description_readm:hover {
 
 .t4s-product__bundle button:has(.t4s-loading__spinner:not([hidden])) .t4s-btn-atc_text {
   display: none !important;
+}
+
+.t4s-product__bundle > p {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222;
 }

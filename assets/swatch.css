@@ -45,10 +45,15 @@ t4s-selector-mode__circle  */
 }
 .t4s-swatch__title {
     font-size: 14px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 400;
     margin: 0.65em 0 0.5em;
 }
+
+.t4s-swatch__option.is-t4s-style__color .t4s-swatch__title {
+    font-weight: 600;
+}
+
 .t4s-swatch__list {
     margin: 10px -5px 0;
     max-width: 397px;

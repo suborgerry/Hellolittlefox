@@ -38,7 +38,18 @@
                 <span class="t4s-accor-icon">{%- render 'icon_accordion',icon:bk_stts.icon -%} </span>
                 {{bk_stts.title}}
               </span>
-              <span class="t4s-accor-item-nav"></span>
+              {% comment %} <span class="t4s-accor-item-nav"></span> {% endcomment %}
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="accordion_nav_icon">
+              <g clip-path="url(#clip0_156_656)">
+              <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="white"/>
+              <path d="M15.8791 12.62L11.9991 15L8.11914 12.62V11L11.9991 13.41L15.8791 11V12.62Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_156_656">
+              <rect width="24" height="24" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>                       
             </a>
             <div id="t4s-{{blockid}}" class="t4s-tab-content t4s-rte" data-t4s-tab-content {% if se_stts.auto_active == false %} style="display: none;"{%- endif -%}>{{bk_stts.content}}</div>
           </div>

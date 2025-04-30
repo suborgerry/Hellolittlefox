@@ -1,11 +1,21 @@
 .t4s-line-item-property__field {
  margin-bottom: 20px;
 }
+.t4s-line-item-property__field.is--type-radio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 .t4s-line-item-property__field:not(.is--type-checkbox) .t4s-line-item-property__label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;    
     margin: 0.65em 0 6px;
     display: inline-block;  
+    width: 100%;
+}
+.t4s-line-item-property__field:not(.is--type-checkbox) .t4s-line-item-property__label strong {
+  color: red;
+  font-family: 500;
 }
 .is--type-short input, .is--type-long textarea {
 	width: 100%;
@@ -18,6 +28,9 @@
 .t4s-line-item-property__field .t4s-line-item-property__field-ck,
 .t4s-line-item-property__field.is--type-checkbox {
 	position: relative;
+}
+.t4s-line-item-property__field-ck {
+  /* display: flex; */
 }
 .t4s-line-item-property__field input[type="checkbox"],
 .t4s-line-item-property__field input[type="radio"],
@@ -153,4 +166,31 @@ to {
 .t4s-ani-shake {
 -webkit-animation-name: t4s-ani-shake;
 animation-name: t4s-ani-shake;
+}
+
+.t4s-line-item-property__field-ck [type="radio"]+label::before,
+.t4s-line-item-property__field-ck [type="radio"]+label::after {
+  display: none !important;
+}
+
+.t4s-line-item-property__field-ck [type="radio"]+label {
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 52px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  border: 1px solid #8787874D;
+  border-radius: 48px;
+}
+
+.t4s-line-item-property__field-ck:has([type="radio"]) {
+  padding: 4px;
+  border-radius: 48px;
+}
+
+.t4s-line-item-property__field-ck:has([type="radio"]:checked) {
+  outline: 2px solid #000;
 }

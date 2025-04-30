@@ -91,7 +91,7 @@ endif -%}
               {%- if get_color contains name_downcase -%}
                 
                 <div data-swatch-option data-id="{{ forloop.index0 }}" class="t4s-swatch__option is-t4s-style__color is-t4s-name__{{option_name | handle}} {% cycle 'is--first-color', '', '' %}">
-                  <h4 class="t4s-swatch__title"><span>{{option_name}}: <span data-current-value class="t4s-dib t4s-swatch__current">{{selected_value | default:choose_an_option }}</span></span>{% if name_sizeg == name_downcase %}{{html_sizeg}}{% endif %}</h4>
+                  <h4 class="t4s-swatch__title 1"><span>{{option_name}}: <span data-current-value class="t4s-dib t4s-swatch__current">{{selected_value | default:choose_an_option }}</span></span>{% if name_sizeg == name_downcase %}{{html_sizeg}}{% endif %}</h4>
                   <div data-swatch-list class="t4s-swatch__list">
                     {%- if color_mode != 'dropdown' -%}
                                                 <!-- 
@@ -246,7 +246,7 @@ endif -%}
               {%- else -%}
 
                 <div data-swatch-option data-id="{{ forloop.index0 }}" class="t4s-swatch__option is-t4s-name__{{option_name | handle}}">
-                  <h4 class="t4s-swatch__title"><span>{{option_name}}: <span data-current-value class="t4s-dib t4s-swatch__current">{{selected_value | default:choose_an_option }}</span></span>{% if name_sizeg == name_downcase %}{{html_sizeg}}{% endif %}</h4>
+                  <h4 class="t4s-swatch__title 2"><span>{{option_name}}: <span data-current-value class="t4s-dib t4s-swatch__current">{{selected_value | default:choose_an_option }}</span></span>{% if name_sizeg == name_downcase %}{{html_sizeg}}{% endif %}</h4>
                   <div class="t4s-swatch__list">
                     {%- if selector_mode != 'dropdown' -%}
                       {%- for value in option.values -%}
@@ -299,7 +299,7 @@ endif -%}
         
         {{- html_price -}}
       <div class="custom-size-personalization">
-          <label class="t4s-swatch__title" for="custom-size-personalization">Personalization</label>
+          <label class="t4s-swatch__title 3" for="custom-size-personalization">Example: My toy's & treats fund *</label>
           <input type="text" id="custom-size-personalization" name="properties[Personalization]" placeholder="Enter your personalization">
       </div>
 

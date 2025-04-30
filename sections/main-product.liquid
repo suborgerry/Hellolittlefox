@@ -765,6 +765,49 @@ endif -%}
         </div>
       </div>
     </div> 
+    {% for block in section.blocks %}
+      {% case block.type %}
+      {%- when 'bundle' -%}
+        <div class="t4s-product__bundle">
+          <div>
+          <p>Build your bundle</p>
+          <div class="t4s-product__bundle-images">
+            {%- for item in product.metafields.bundle.products.value -%}
+              {{ item.featured_image |  image_url: width: 200 | image_tag }}
+            {%- endfor -%}
+          </div>
+          </div>
+          <div>
+          <div class="t4s-product__bundle-info">
+            {%- for item in product.metafields.bundle.products.value -%}
+            <div class="bundle_product" data-id="{{ item.first_available_variant.id }}">
+              <div class="bundle_product-checkbox">
+                <label for="bundle_item_{{ forloop.index }}">
+                  <input type="checkbox" id="bundle_item_{{ forloop.index }}" />
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="11" height="11" rx="5.5" fill="white" stroke="black"/>
+                    <path d="M9.4 4L7.8 5.6C6.47452 6.92548 4.32548 6.92548 3 5.6V5.6" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="bundle_product-title">{{ item.title }}</div>
+              <div class="bundle_product-price">
+              {% if item.compare_at_price != empty %}<span class="comrare_price">{{ item.compare_at_price | money }}</span>{% endif %}
+                <span class="regular_price">{{ item.price | money }}</span>
+              </div>
+            </div>
+            {%- endfor -%}
+          </div>
+          <button id="add_bundle" class="t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top">
+            <span class="t4s-btn-atc_text">Add BUNDLE to Cart</span>
+            <span class="t4s-loading__spinner" hidden="">
+              <svg width="16" height="16" hidden="" class="t4s-svg-spinner" focusable="false" role="presentation" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="t4s-path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg>
+            </span>
+          </button>
+          </div>
+        </div>          
+      {% endcase %}
+    {% endfor %}
   </div>
   <aside data-sidebar-content class="t4s-col-item t4s-col-12 t4s-col-lg-3 t4s-sidebar t4s-dn"><div class="t4s-loading--bg"></div></aside>
 </div>
@@ -4381,13 +4424,13 @@ endif -%}
                   "content": "IMPORTANT: Upload file not support dynamic checkout buttons on product page, quick view, quick shop."
                 },
                 {
-                 "type": "text",
+                 "type": "inline_richtext",
                  "id": "heading",
                  "default": "Your name",
                  "label": "Your form field label"
                 },
                 {
-                 "type": "textarea",
+                 "type": "inline_richtext",
                  "id": "options",
                  "label": "Options if using radio buttons, a drop-down select, or checkbox group",
                  "default": "option1, option2",

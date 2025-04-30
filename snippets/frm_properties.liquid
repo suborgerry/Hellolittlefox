@@ -13,7 +13,7 @@ assign pr_collection_title = product.collections | map:'title'
    {%- liquid 
     assign bk_stts_field = field.settings
     assign type_field    = bk_stts_field.type
-    assign name_field    = bk_stts_field.heading | escape
+    assign name_field    = bk_stts_field.heading | strip_html
     assign id_field      = field.id
     if bk_stts_field.show_at_checkout
       assign show_at_checkout = ''
@@ -72,7 +72,7 @@ assign pr_collection_title = product.collections | map:'title'
       {%- case type_field -%}
          
         {%- when 'short' or 'long' -%}
-        <label class="t4s-line-item-property__label t4s_as_title" for="name_{{ id_field }}">{{ name_field }}</label><br>
+        <label class="t4s-line-item-property__label t4s_as_title 1" for="name_{{ id_field }}">{{ name_field }}</label><br>
         {%- if type_field == 'short' -%}
         <input {{ required }} id="name_{{ id_field }}" type="text" name="properties[{{ name_field_checkout }}]">
         {%- else -%}
@@ -85,13 +85,13 @@ assign pr_collection_title = product.collections | map:'title'
         <label class="t4s-line-item-property__label t4s_as_title_" for="name_{{ id_field }}">{{ name_field }}</label><svg id="t4s-line-item-property__icon_selected" viewBox="0 0 24 24"><path d="M9 20l-7-7 3-3 4 4L19 4l3 3z"></path></svg>
 
         {%- when 'radio' -%}
-        <label class="t4s-line-item-property__label t4s_as_title">{{ name_field }}</label><br>
+        <label class="t4s-line-item-property__label t4s_as_title 2">{{ bk_stts_field.heading }}</label>
         {%- if arr_options.size > 0 -%}
          {%- for option in arr_options %}<div class="t4s-line-item-property__field-ck"><input {{ required }} id="value{{ id_field }}__{{ forloop.index }}" type="radio" name="properties[{{ name_field_checkout }}]" value="{{ option | strip | escape }}"> <label for="value{{ id_field }}__{{ forloop.index }}">{{ option | escape }}</label></div>{% endfor -%}
         {%- endif -%}
 
         {%- when 'select' -%}
-        <label class="t4s-line-item-property__label t4s_as_title">{{ name_field }}</label><br>
+        <label class="t4s-line-item-property__label t4s_as_title 3">{{ name_field }}</label><br>
         {%- if arr_options.size > 0 -%}
         <select {{ required }} id="name_{{ id_field }}" name="properties[{{ name_field_checkout }}]">
           {%- for option in arr_options %}<option value="{{ option | strip | escape }}">{{ option | escape }}</option>{% endfor -%}
@@ -122,7 +122,7 @@ assign pr_collection_title = product.collections | map:'title'
           }
         </script>
         {%- endif -%}
-        <label class="t4s-line-item-property__label t4s_as_title">{{ name_field }}</label><br>
+        <label class="t4s-line-item-property__label t4s_as_title 4">{{ name_field }}</label><br>
         {%- if arr_options.size > 0 -%}
         {%- for option in arr_options -%}
         <div class="t4s-line-item-property__field-ck"><input type="checkbox" id="value{{ id_field }}__{{ forloop.index }}" hidden-data="name_{{ id_field }}" onchange="fillHiddenT4s('name_{{ id_field }}')" value="{{ option | escape }}"><label for="value{{ id_field }}__{{ forloop.index }}">{{ option | escape }}</label><svg id="t4s-line-item-property__icon_selected" viewBox="0 0 24 24"><path d="M9 20l-7-7 3-3 4 4L19 4l3 3z"></path></svg></div>
@@ -152,7 +152,7 @@ assign pr_collection_title = product.collections | map:'title'
             }
         </script>
         {%- endif -%}
-        <label class="t4s-line-item-property__label t4s_as_title" id="label_{{ id_field }}" for="name_{{ id_field }}">{{ name_field }}</label><br>
+        <label class="t4s-line-item-property__label t4s_as_title 5" id="label_{{ id_field }}" for="name_{{ id_field }}">{{ name_field }}</label><br>
         <input {{ required }} id="name_{{ id_field }}" type="file" onchange="updateFilenameT4s(this.value,'label_{{ id_field }}')" data-accept="image/jpg,image/jpeg,image/gif,image/png" autocorrect="off" autocapitalize="off" name="properties[{{ name_field_checkout }}]">
       
       {%- endcase -%}
