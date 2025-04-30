@@ -1,21 +1,23 @@
 (() => {
-    const add_bundle_btn = document.querySelector('#add_bundle');
-    const add_bundle_btn_spiner = add_bundle_btn.querySelector('.t4s-loading__spinner');
-    const add_bundle_btn_svg = add_bundle_btn_spiner.querySelector('svg');
+    const add_bundle_btns = document.querySelectorAll('#add_bundle');
 
-    const init_loading = () => {
+    const init_loading = (add_bundle_btn_spiner, add_bundle_btn_svg) => {
         add_bundle_btn_spiner.removeAttribute('hidden');
         add_bundle_btn_svg.removeAttribute('hidden');
     }
 
-    const stop_loading = () => {
+    const stop_loading = (add_bundle_btn_spiner, add_bundle_btn_svg) => {
         add_bundle_btn_spiner.setAttribute('hidden', '');
         add_bundle_btn_svg.setAttribute('hidden', '');
     }
 
-    const add_products = () => {
-        const bundle_products = document.querySelectorAll('.bundle_product');
+    const add_products = (add_bundle_btn) => {
+        const t4s_product__bundle = add_bundle_btn.closest('.t4s-product__bundle');
+        const bundle_products = t4s_product__bundle.querySelectorAll('.bundle_product');
         const bundle_products_length = bundle_products.length - 1;
+
+        const add_bundle_btn_spiner = add_bundle_btn.querySelector('.t4s-loading__spinner');
+        const add_bundle_btn_svg = add_bundle_btn_spiner.querySelector('svg');    
 
         let count = 0;
 
@@ -35,7 +37,7 @@
 
             const is_loading = !add_bundle_btn_spiner.hasAttribute('hidden');
 
-            !is_loading && init_loading();
+            !is_loading && init_loading(add_bundle_btn_spiner, add_bundle_btn_svg);
 
             const variant_id = bundle_products[count].dataset.id;
 
@@ -60,10 +62,10 @@
 
                 if(count > bundle_products_length) { 
 
-                    stop_loading();
+                    stop_loading(add_bundle_btn_spiner, add_bundle_btn_svg);
                     return;
                 } else {
-                    init_adding();
+                    init_adding(add_bundle_btn_spiner, add_bundle_btn_svg);
                 };
             });
         };
@@ -71,6 +73,11 @@
         init_adding();
     };
 
-    add_bundle_btn.addEventListener('click', add_products)
+    add_bundle_btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            add_products(btn)
+        })
+    });
+    
 
 })()

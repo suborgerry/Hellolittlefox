@@ -880,6 +880,10 @@ button.t4s-product__description_readm:hover {
   border: 1px solid #8787874D;
 }
 
+.t4s-product__bundle:has(.t4s-product__bundle-info:empty) {
+  display: none !important;
+}
+
 @media screen and (max-width: 768px) {
   .t4s-product__bundle {
     display: flex;

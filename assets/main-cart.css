@@ -561,3 +561,22 @@ input[type=checkbox][data-agree-checkbox]:checked~svg {
 .t4s-key__rate:after {
     content: ':';
 }
+
+.t4s-product__bundle {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex;
+    gap: 20px;
+    border: 0 !important;
+    border-bottom: 1px solid #8787874D !important;
+    border-radius: 0 !important;
+}
+
+.t4s-product__bundle button {
+    max-width: max-content;
+    margin-top: 20px !important;
+}
+
+.t4s-product__bundle-info {
+    gap: 20px !important;
+}

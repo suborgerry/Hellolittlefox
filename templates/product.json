@@ -131,7 +131,7 @@
           "type": "properties",
           "settings": {
             "type": "radio",
-            "heading": "Add extra text on front: * (+$10.00)",
+            "heading": "Add extra text on front: <strong>* (+$10.00)</strong>",
             "options": "no, yes",
             "required": false,
             "show_at_checkout": true,
@@ -488,7 +488,7 @@
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Tab 01",
+            "title": "Are the products really 100% made from natural materials?",
             "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
           }
         },
@@ -496,7 +496,7 @@
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Tab 02",
+            "title": "Are the products really 100% made from natural materials?",
             "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
           }
         },
@@ -504,7 +504,7 @@
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Tab 03",
+            "title": "Are the products really 100% made from natural materials?",
             "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
           }
         }
@@ -516,7 +516,7 @@
       ],
       "name": "Accordion",
       "settings": {
-        "design_heading": "2",
+        "design_heading": "1",
         "heading_align": "t4s-text-center",
         "top_heading": "FREQUENTLY ASKED QUESTIONS",
         "icon_heading": "las la-gem",
@@ -524,9 +524,9 @@
         "tophead_mb": 30,
         "accor_des": "2",
         "title_cl": "#222222",
-        "bg_title_cl": "#f6f6f8",
+        "bg_title_cl": "#f5f5f5",
         "title_active_cl": "#000000",
-        "bg_title_active_cl": "#f6f6f8",
+        "bg_title_active_cl": "#f5f5f5",
         "content_cl": "#878787",
         "bg_content_cl": "rgba(0,0,0,0)",
         "content_align": "t4s-text-start",
