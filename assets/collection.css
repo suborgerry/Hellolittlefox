@@ -223,8 +223,14 @@
     background-color: #E0EBE380;
     backdrop-filter: blur(4px);
     height: auto;
-    min-height: 115px;
+    min-height: 65px;
     bottom: 0;
+}
+
+@media screen and (min-width: 1600px) {
+    .t4s-coll-style-10 .t4s-cate-wrapper {
+        min-height: 115px;
+    }
 }
 
 @media screen and (max-width: 768px) {
