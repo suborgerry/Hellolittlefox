@@ -87,7 +87,7 @@ assign pr_collection_title = product.collections | map:'title'
         {%- when 'radio' -%}
         <label class="t4s-line-item-property__label t4s_as_title 2">{{ bk_stts_field.heading }}</label>
         {%- if arr_options.size > 0 -%}
-         {%- for option in arr_options %}<div class="t4s-line-item-property__field-ck"><input {{ required }} id="value{{ id_field }}__{{ forloop.index }}" type="radio" name="properties[{{ name_field_checkout }}]" value="{{ option | strip | escape }}"> <label for="value{{ id_field }}__{{ forloop.index }}">{{ option | escape }}</label></div>{% endfor -%}
+         {%- for option in arr_options %}<div class="t4s-line-item-property__field-ck"><input {{ required }} id="value{{ id_field }}__{{ forloop.index }}" type="radio" {% if forloop.first %}checked{% endif %} name="properties[{{ name_field_checkout }}]" value="{{ option | strip | escape }}"> <label for="value{{ id_field }}__{{ forloop.index }}">{{ option | escape }}</label></div>{% endfor -%}
         {%- endif -%}
 
         {%- when 'select' -%}
@@ -159,4 +159,4 @@ assign pr_collection_title = product.collections | map:'title'
    </div>
 
 {%- endfor -%}
-<div class="t4s-line-item-property__space t4s-clearfix"></div>
+{% comment %} <div class="t4s-line-item-property__space t4s-clearfix"></div> {% endcomment %}

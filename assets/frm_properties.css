@@ -1,10 +1,11 @@
 .t4s-line-item-property__field {
- margin-bottom: 20px;
+ margin-bottom: 10px;
 }
 .t4s-line-item-property__field.is--type-radio {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  column-gap: 10px;
+  row-gap: 5px;
 }
 .t4s-line-item-property__field:not(.is--type-checkbox) .t4s-line-item-property__label {
     font-size: 16px;
@@ -187,7 +188,7 @@ animation-name: t4s-ani-shake;
 }
 
 .t4s-line-item-property__field-ck:has([type="radio"]) {
-  padding: 4px;
+  padding: 3px;
   border-radius: 48px;
 }
 
