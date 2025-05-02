@@ -504,7 +504,7 @@
         "news_overlay": "#000000",
         "news_overlay_opacity": 0,
         "layout": "t4s-container-wrap",
-        "cl_bg": "#e0ebe3",
+        "cl_bg": "#f6ecea",
         "cl_bg_gradient": "",
         "parallax": false,
         "mg": ",,,",
