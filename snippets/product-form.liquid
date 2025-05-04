@@ -298,10 +298,13 @@ endif -%}
         <link href="{{ 'custom-effect.css' | asset_url }}" rel="stylesheet" media="print" onload="this.media='all'">
         
         {{- html_price -}}
-      <div class="custom-size-personalization">
-          <label class="t4s-swatch__title 3" for="custom-size-personalization">Example: My toy's & treats fund *</label>
-          <input type="text" id="custom-size-personalization" name="properties[Personalization]" placeholder="Enter your personalization">
-      </div>
+
+        {% if show_customize %}
+          <div class="custom-size-personalization">
+            <label class="t4s-swatch__title 3" for="custom-size-personalization">Example: My toy's & treats fund *</label>
+            <input type="text" id="custom-size-personalization" name="properties[Personalization]" placeholder="Enter your personalization">
+          </div>
+        {% endif %}
 
         <div class="t4s-product-form__buttons" style="--pr-btn-round:{{bk_stts.pr_btn_round}}px;"> 
           <div class="t4s-d-flex t4s-flex-wrap">
