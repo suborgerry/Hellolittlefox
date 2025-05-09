@@ -195,3 +195,7 @@ animation-name: t4s-ani-shake;
 .t4s-line-item-property__field-ck:has([type="radio"]:checked) {
   outline: 2px solid #000;
 }
+
+.t4s-line-item-property__field.is--type-radio:has([value="no"]:checked)~.custom-size-personalization {
+  display: none
+}

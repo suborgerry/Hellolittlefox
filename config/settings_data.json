@@ -2270,6 +2270,16 @@
         "type": "shopify://apps/reputon-etsy-reviews/blocks/product-rating-snippet-embed/8df530b9-db50-44f9-a43b-c93c6bac56a9",
         "disabled": false,
         "settings": {}
+      },
+      "opinew-global-code": {
+        "type": "shopify://apps/opinew-product-reviews-app/blocks/global/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
