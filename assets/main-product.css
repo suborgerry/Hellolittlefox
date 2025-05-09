@@ -818,6 +818,13 @@ button.t4s-product-form__submit[disabled="disabled"]{
 .t4s-product-tabs-wrapper .t4s-tabs-ul.t4s-flicky-slider {
   padding: 0 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .t4s-product-tabs-wrapper {
+    display: none;
+  }
+}
+
 button.t4s-product__description_readm {
     padding: 0;
     background-color: transparent !important;
@@ -961,6 +968,7 @@ button.t4s-product__description_readm:hover {
 
 .bundle_product-title {
   color: #222222;
+  text-transform: capitalize;
   transition: all 0.2s ease-in;
 }
 
@@ -1028,4 +1036,28 @@ button.t4s-product__description_readm:hover {
   font-weight: 400;
   text-transform: uppercase;
   color: #222;
+}
+
+.t4s-product__bundle-prices {
+  display: flex;
+  justify-content: center;
+  column-gap: 6px;
+}
+
+.t4s-product__bundle-prices>* {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.t4s-product__bundle-old-price {
+  color: #222222;
+}
+
+.t4s-product__bundle-old-price>span {
+  text-decoration: line-through;
+}
+
+.t4s-product__bundle-sale-price {
+  color: #FF4E00;
 }
