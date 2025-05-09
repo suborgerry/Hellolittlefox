@@ -46,6 +46,15 @@
             "show_tags": false
           }
         },
+        "judge_me_reviews_preview_badge_t6Wccz": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "judge_me_reviews_verified_badge_yNqMGg": {
+          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
         "price_review": {
           "type": "price_review",
           "settings": {
@@ -254,6 +263,8 @@
       "block_order": [
         "title",
         "meta",
+        "judge_me_reviews_preview_badge_t6Wccz",
+        "judge_me_reviews_verified_badge_yNqMGg",
         "price_review",
         "inventory_qty_zGLDWa",
         "description",
@@ -411,6 +422,7 @@
       "blocks": {
         "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz": {
           "type": "shopify://apps/reputon-etsy-reviews/blocks/carousel-widget-block.product/8df530b9-db50-44f9-a43b-c93c6bac56a9",
+          "disabled": true,
           "settings": {
             "themeId": "light",
             "autoscroll": true,
@@ -420,10 +432,15 @@
             "showAvatar": true,
             "fixedReviewsHeight": false
           }
+        },
+        "judge_me_reviews_verified_badge_VzcC4P": {
+          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
-        "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz"
+        "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz",
+        "judge_me_reviews_verified_badge_VzcC4P"
       ],
       "settings": {}
     },
