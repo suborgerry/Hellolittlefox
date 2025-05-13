@@ -617,6 +617,103 @@
         "mg_mb": ",,30px,",
         "pd_mb": ""
       }
+    },
+    "newsletter_Y7aLcR": {
+      "type": "newsletter",
+      "blocks": {
+        "custom_text_4p9yki": {
+          "type": "custom_text",
+          "settings": {
+            "text": "Subscribe to our newsletter",
+            "remove_br_tag": false,
+            "tag": "p",
+            "fontf": "inherit",
+            "text_cl": "#595353",
+            "text_fs": 24,
+            "text_lh": 0,
+            "text_fw": 600,
+            "text_ls": 0,
+            "font_italic": false,
+            "text_shadow": false,
+            "text_mgb": 0,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10
+          }
+        },
+        "custom_text_adLiph": {
+          "type": "custom_text",
+          "settings": {
+            "text": "Subscribe to our newsletter and get 10% off your first purchase",
+            "remove_br_tag": false,
+            "tag": "p",
+            "fontf": "inherit",
+            "text_cl": "#878787",
+            "text_fs": 14,
+            "text_lh": 24,
+            "text_fw": 400,
+            "text_ls": 0,
+            "font_italic": false,
+            "text_shadow": false,
+            "text_mgb": 30,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10
+          }
+        },
+        "newsletter_Tpwrkp": {
+          "type": "newsletter",
+          "settings": {
+            "form_width": 0,
+            "form_width_mb": 0,
+            "newl_des": "1",
+            "news_align": "center",
+            "newl_size": "small",
+            "btn_icon": false,
+            "input_cl": "#878787",
+            "border_cl": "#000000",
+            "btn_cl": "#ffffff",
+            "btn_bg_cl": "#222222",
+            "btn_hover_cl": "#ffffff",
+            "btn_hover_bg_cl": "#56cfe1",
+            "hidden_mobile": false,
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        }
+      },
+      "block_order": [
+        "custom_text_4p9yki",
+        "custom_text_adLiph",
+        "newsletter_Tpwrkp"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "content_align": "all-center",
+        "news_overlay": "#000000",
+        "news_overlay_opacity": 0,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#f6ecea",
+        "cl_bg_gradient": "",
+        "parallax": false,
+        "mg": ",,,",
+        "pd": "50px,,50px,",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -626,6 +723,7 @@
     "174552431977ee2ff9",
     "product-recommendations",
     "accordion_GHYNN8",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "newsletter_Y7aLcR"
   ]
 }

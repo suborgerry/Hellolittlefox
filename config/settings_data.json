@@ -78,6 +78,8 @@
     "notify_currency": true,
     "hover_currency": false,
     "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
     "share_tumblr": false,
     "share_email": true,
     "share_telegram": true,
@@ -86,12 +88,12 @@
     "social_twitter_link": "https://twitter.com/hellolittlefox1",
     "social_instagram_link": "https://www.instagram.com/hello_little_fox/",
     "social_dribbble_link": "",
-    "social_linkedin_link": "#",
+    "social_linkedin_link": "",
     "social_pinterest_link": "https://www.pinterest.com/hellolittlefox0559/",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
     "social_youtube_link": "https://www.youtube.com/@hellolittlefoxcom",
-    "social_vimeo_link": "#",
+    "social_vimeo_link": "",
     "social_behance_link": "",
     "social_soundcloud_link": "",
     "social_tiktok_link": "",
@@ -572,21 +574,8 @@
           "base_XaNJFK": {
             "type": "base",
             "settings": {
-              "title": "Shop",
+              "title": "catalog",
               "url": "shopify://collections",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#7f6c6c",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "base_rTdTyj": {
-            "type": "base",
-            "settings": {
-              "title": "Blog",
-              "url": "shopify://blogs/blog",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -607,13 +596,26 @@
               "lb": "",
               "lb_cl": ""
             }
+          },
+          "base_rTdTyj": {
+            "type": "base",
+            "settings": {
+              "title": "Blog",
+              "url": "shopify://blogs/blog",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#7f6c6c",
+              "lb": "",
+              "lb_cl": ""
+            }
           }
         },
         "block_order": [
           "base_mmPW6b",
           "base_XaNJFK",
-          "base_rTdTyj",
-          "base_cm6GYj"
+          "base_cm6GYj",
+          "base_rTdTyj"
         ],
         "settings": {
           "layout": "logo_left",
