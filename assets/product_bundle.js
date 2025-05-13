@@ -41,6 +41,8 @@
 
             const variant_id = bundle_products[count].dataset.id;
 
+            console.log(variant_id);
+
             fetch('/cart/add.js', {
                 method: 'POST',
                 headers: {

@@ -491,8 +491,8 @@ endif -%}
                       TODAY: {{ comp_price | money }}
                     </div>
                   </div>
-                  {%- for item in product.metafields.bundle.products.value -%}
-                  <div class="bundle_product" data-id="{{ item.first_available_variant.id }}">
+                  {%- for item_b in product.metafields.bundle.products.value -%}
+                  <div class="bundle_product" data-id="{{ item_b.selected_or_first_available_variant.id }}">
                     <div class="bundle_product-checkbox">
                       <label for="bundle_item_{{ forloop.index }}">
                         <input type="checkbox" checked="checked" id="bundle_item_{{ forloop.index }}" />
@@ -502,10 +502,10 @@ endif -%}
                         </svg>
                       </label>
                     </div>
-                    <div class="bundle_product-title">{{ item.title }}</div>
+                    <div class="bundle_product-title">{{ item_b.title }}</div>
                     <div class="bundle_product-price">
-                    {% if item.compare_at_price != empty %}<span class="comrare_price">{{ item.compare_at_price | money }}</span>{% endif %}
-                      <span class="regular_price">{{ item.price | money }}</span>
+                    {% if item_b.compare_at_price != empty %}<span class="comrare_price">{{ item_b.compare_at_price | money }}</span>{% endif %}
+                      <span class="regular_price">{{ item_b.price | money }}</span>
                     </div>
                   </div>
                   {%- endfor -%}
@@ -802,21 +802,21 @@ endif -%}
           </div>
           <div>
           <div class="t4s-product__bundle-info">
-            {%- for item in product.metafields.bundle.products.value -%}
-            <div class="bundle_product" data-id="{{ item.first_available_variant.id }}">
+            {%- for item_b in product.metafields.bundle.products.value -%}
+            <div class="bundle_product" data-id="{{ item_b.selected_or_first_available_variant.id }}">
               <div class="bundle_product-checkbox">
                 <label for="bundle_item_{{ forloop.index }}">
-                  <input type="checkbox" id="bundle_item_{{ forloop.index }}" />
+                  <input type="checkbox" checked="checked" id="bundle_item_{{ forloop.index }}" />
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="11" height="11" rx="5.5" fill="white" stroke="black"/>
                     <path d="M9.4 4L7.8 5.6C6.47452 6.92548 4.32548 6.92548 3 5.6V5.6" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </label>
               </div>
-              <div class="bundle_product-title">{{ item.title }}</div>
+              <div class="bundle_product-title">{{ item_b.title }}</div>
               <div class="bundle_product-price">
-              {% if item.compare_at_price != empty %}<span class="comrare_price">{{ item.compare_at_price | money }}</span>{% endif %}
-                <span class="regular_price">{{ item.price | money }}</span>
+              {% if item_b.compare_at_price != empty %}<span class="comrare_price">{{ item_b.compare_at_price | money }}</span>{% endif %}
+                <span class="regular_price">{{ item_b.price | money }}</span>
               </div>
             </div>
             {%- endfor -%}
