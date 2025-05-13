@@ -302,7 +302,21 @@ endif -%}
           <label class="t4s-swatch__title 3" for="custom-size-personalization">Example: My toy's & treats fund *</label>
           <input type="text" id="custom-size-personalization" name="properties[Personalization]" placeholder="Enter your personalization">
       </div>
-
+        {% assign min = 1 %}
+        {% assign max = 10 %}
+        {% assign diff = max | minus: min %}
+        {% assign random_number = "now" | date: "%N" | modulo: diff | plus: min %}
+        <div class="product_visitors">
+          <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 7C2.45455 4.429 5.36364 1 9 1" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 7C2.45455 9.571 5.36364 13 9 13" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 7C15.5455 9.571 12.6364 13 9 13" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M17 7C15.5455 4.429 12.6364 1 9 1" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M9 10.375C10.8075 10.375 12.2727 8.86396 12.2727 7C12.2727 5.13604 10.8075 3.625 9 3.625C7.19252 3.625 5.72727 5.13604 5.72727 7C5.72727 8.86396 7.19252 10.375 9 10.375Z" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+          {{ random_number }}
+          visitor(s) currently looking at this product
+        </div>
         <div class="t4s-product-form__buttons" style="--pr-btn-round:{{bk_stts.pr_btn_round}}px;"> 
           <div class="t4s-d-flex t4s-flex-wrap">
              {%- if isExternal -%}

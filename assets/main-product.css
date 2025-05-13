@@ -471,6 +471,13 @@ button.t4s-product-form__submit[disabled="disabled"]{
     justify-content: center;
     order: 3;
 }
+.product_visitors {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #222222;
+  margin: 25px 0;
+}
 .t4s-product-form__buttons .t4s-pr-wishlist:hover {
   color: var(--wishlist-hover-color);
   border-color: var(--wishlist-hover-color);
@@ -487,9 +494,9 @@ button.t4s-product-form__submit[disabled="disabled"]{
 }
 .t4s-product-form__buttons .t4s-pr-wishlist .t4s-svg-pr-icon svg,
 .t4s-product-form__buttons .t4s-pr-compare .t4s-svg-pr-icon svg{
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    fill: transparent;
     pointer-events: none;
 }
 .t4s-product-form__buttons .t4s-pr-wishlist .t4s-text-pr,

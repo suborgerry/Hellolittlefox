@@ -41,8 +41,15 @@ endif -%}
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
   </symbol>
   <symbol id="t4s-icon-wis">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-  </symbol>
+    <svg width="24" height="24" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 7.66667C1 3.98222 4.05 1 7.81818 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1 7.66667C1 12.1111 3.27273 14.3333 13.5 21" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.5 4.33333C13.5 4.33333 10.9591 1 7.81818 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M26 7.66667C26 3.98222 22.95 1 19.1818 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M26 7.66667C26 12.1111 23.7273 14.3333 13.5 21" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.5 4.33333C13.5 4.33333 16.0409 1 19.1818 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+        </symbol>
   <symbol id="t4s-icon-wis-added">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
   </symbol>
@@ -213,21 +220,21 @@ endif -%}
   !function(){const t=document.documentElement.offsetWidth;t<1025&&[].forEach.call(document.querySelectorAll(".t4s-container-fluid >.t4s-row,.t4s-container >.t4s-row"),function(e){e.offsetWidth>t&&e.classList.add("t4s-fix-overflow")});const e=document.querySelector('#MainContent .t4s-section img[loading="lazy"]'),n=document.querySelector('#MainContent .t4s-section img.t4s-d-none.t4s-d-md-block[loading="lazy"]');function o(t){return!!(t.offsetWidth||t.offsetHeight||t.getClientRects().length)}e&&window.innerWidth<768&&e.setAttribute("loading","eager"),n&&window.innerWidth>767&&n.setAttribute("loading","eager");var i=window.pageXOffset,s=window.pageYOffset,r=window.innerWidth,a=window.innerHeight;function f(t,e=!1){for(var n=t.offsetTop,o=t.offsetLeft,f=t.offsetWidth,d=t.offsetHeight;t.offsetParent;)n+=(t=t.offsetParent).offsetTop,o+=t.offsetLeft;return e?n<s+a&&o<i+r&&n+d>s&&o+f>i:n>=s&&o>=i&&n+d<=s+a&&o+f<=i+r}var d=0,l=document.querySelectorAll("#MainContent .t4s-section");0!=l.length&&[...l].some((t,e)=>{let n=e?f(t):f(t,!0);if(n)++d,t.querySelectorAll("img.lazyloadt4s").forEach(t=>{if(o(t)){let e=JSON.parse(t.getAttribute("data-widths")),n=t.getAttribute("data-src"),o=t.getAttribute("data-sizes-scale")||1,i=window.devicePixelRatio||1,s=function(t,e){for(var n=e[0],o=Math.abs(t-n),i=0;i<e.length;i++){let s=Math.abs(t-e[i]);s<=o&&(o=s,n=e[i])}return n}(t.clientWidth*o*i,e);t.removeAttribute("loading"),t.setAttribute("src",n.replace("width=1","width="+s)),t.classList.add("lazyloadt4s-opt")}});else if(!n&&d>0)return!0})}();
 </script>
 <template id="btns_pr_temp">
-  {%- if enable_quickview %}<a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-quickview" data-action-quickview><span class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-qv"></use></svg></span><span class="t4s-text-pr">{{'products.product_card.quick_view' | t}}</span></a>{% endif %}[split_t4nt]
+  {%- if enable_quickview %}<a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-quickview" data-action-quickview><span q class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-qv"></use></svg></span><span class="t4s-text-pr">{{'products.product_card.quick_view' | t}}</span></a>{% endif %}[split_t4nt]
   
-  {%- if settings.enable_compe %}<a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" data-handle="handle_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-compare" data-action-compare><span class="t4s-svg-pr-icon"><svg class="t4s-svg-cp" viewBox="0 0 24 24"><use xlink:href="#t4s-icon-cp"></use></svg></span><span class="t4s-text-pr">{{'products.product.compare' | t}}</span></a>{% endif %}[split_t4nt]
+  {%- if settings.enable_compe %}<a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" data-handle="handle_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-compare" data-action-compare><span w class="t4s-svg-pr-icon"><svg class="t4s-svg-cp" viewBox="0 0 24 24"><use xlink:href="#t4s-icon-cp"></use></svg></span><span class="t4s-text-pr">{{'products.product.compare' | t}}</span></a>{% endif %}[split_t4nt]
   
   {%- if settings.wishlist_mode == "1" -%}
-     <a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-wishlist" data-action-wishlist><span class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-wis"></use></svg></span><span class="t4s-text-pr">{{'products.product.add_to_wishlist' | t}}</span></a>
+     <a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-wishlist" data-action-wishlist><span e class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-wis"></use></svg></span><span class="t4s-text-pr">{{'products.product.add_to_wishlist' | t}}</span></a>
   {%- elsif settings.wishlist_mode == "2" and shop.customer_accounts_enabled -%}
      {%- if customer -%} 
-     <a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" data-handle="handle_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-wishlist" data-action-wishlist><span class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-wis"></use></svg></span><span class="t4s-text-pr">{{'products.product.add_to_wishlist' | t}}</span></a>
+     <a href="#t4s_pr_url" data-tooltip="" data-id="id_nt_94" data-handle="handle_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-wishlist" data-action-wishlist><span r class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-wis"></use></svg></span><span class="t4s-text-pr">{{'products.product.add_to_wishlist' | t}}</span></a>
      {%- else -%}
-     <a href="{{routes.account_login_url}}" data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-wishlist" data-action-wishlist-login><span class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-wis"></use></svg></span><span class="t4s-text-pr">{{'products.product.login_to_wishlist' | t}}</span></a>
+     <a href="{{routes.account_login_url}}" data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-wishlist" data-action-wishlist-login><span t class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-wis"></use></svg></span><span class="t4s-text-pr">{{'products.product.login_to_wishlist' | t}}</span></a>
      {%- endif -%}
   {%- endif -%}[split_t4nt]
   
-  {%- if settings.enable_atc -%}<a href="#t4s_pr_url" data-atc-selector data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-addtocart" dat-qty="1"><span class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-atc"></use></svg></span><span class="t4s-text-pr">{{'products.product.add_to_cart' | t}}</span></a>{% endif %}[split_t4nt]
+  {%- if settings.enable_atc -%}<a href="#t4s_pr_url" data-atc-selector data-tooltip="" data-id="id_nt_94" rel="nofollow" class="t4s-pr-item-btn t4s-pr-addtocart" dat-qty="1"><span y class="t4s-svg-pr-icon"><svg viewBox="0 0 24 24"><use xlink:href="#t4s-icon-atc"></use></svg></span><span class="t4s-text-pr">{{'products.product.add_to_cart' | t}}</span></a>{% endif %}[split_t4nt]
   {%- if settings.show_qty -%}
   <div data-quantity-wrapper class="t4s-quantity-wrapper t4s-quantity-pr-item"> 
     <button data-quantity-selector data-decrease-qty type="button" class="t4s-quantity-selector is--minus"><svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation"><path d="M10 0v2H0V0z" fill="currentColor"></path></svg></button>

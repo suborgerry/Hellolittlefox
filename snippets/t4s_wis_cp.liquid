@@ -33,5 +33,21 @@ endunless
 {%- endif -%}
 
 {%- if bk_stts.enable_compare and settings.enable_compe -%}
-   <a href="{{product_url}}" data-tooltip{{dataTooltip}}="top" data-id="{{product_id}}" data-handle="{{ pr_handle }}" rel="nofollow" class="t4s-product-form__btn t4s-pr-compare" data-action-compare><span class="t4s-svg-pr-icon"><svg class="t4s-svg-cp 1" viewBox="0 0 24 24"><use xlink:href="#t4s-icon-cp"></use></svg></span><span class="t4s-text-pr">{{'products.product.compare' | t}}</span></a>
+   <a href="{{product_url}}" data-tooltip{{dataTooltip}}="top" data-id="{{product_id}}" data-handle="{{ pr_handle }}" rel="nofollow" class="t4s-product-form__btn t4s-pr-compare" data-action-compare><span class="t4s-svg-pr-icon">
+      <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <g clip-path="url(#clip0_156_561)">
+         <path d="M0.242188 3.00659H5.81333C10.1119 3.00659 14.3716 13.9934 19.2433 13.9934H23.9305" stroke="#313131" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M14.4062 6.25116C16.2034 4.42973 17.4905 3.00659 19.244 3.00659H23.9311" stroke="#313131" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M0.242188 13.9935H5.81333C7.37247 13.9935 8.53333 12.5509 10.2868 10.7149" stroke="#313131" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M21.1621 0.242859L23.9258 3.00657L21.1621 5.77029" stroke="#313131" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M21.1621 11.2297L23.9258 13.9934L21.1621 16.7572" stroke="#313131" stroke-linecap="round" stroke-linejoin="round"/>
+         </g>
+         <defs>
+         <clipPath id="clip0_156_561">
+         <rect width="24.1691" height="17" fill="white"/>
+         </clipPath>
+         </defs>
+         </svg>
+         
+   </span><span class="t4s-text-pr">{{'products.product.compare' | t}}</span></a>
 {%- endif -%}

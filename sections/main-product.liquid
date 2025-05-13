@@ -442,7 +442,6 @@ endif -%}
                    {%- else -%}<p>{{- pr_des | strip_html | truncatewords: bk_stts.length -}}{{readm}}</p>
                    {%-endif-%}
                   </div>
-
             {%- when 'form' -%}
               {%- liquid
                 assign product_list = bk_stts.product_list
@@ -2136,6 +2135,12 @@ endif -%}
               }
             ],
             "default": "block"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_visitors",
+            "label": "Show visitors",
+            "default": true
           },
           {
             "type": "select",
