@@ -61,7 +61,7 @@
     display: flex;
 }
 .is--tab-design__accordion .t4s-tab-wrapper:not(:last-of-type) {
-    margin-bottom: 36px;
+    margin-bottom: 20px;
 }
 
 .is--tab-design__accordion .t4s-tab-wrapper {
@@ -148,7 +148,7 @@
    * Accordion
    */
     .t4s-tab__title .t4s-tab__text {
-        padding: 10px 20px 36px;
+        padding: 10px 20px 20px;
     }
   
 }
