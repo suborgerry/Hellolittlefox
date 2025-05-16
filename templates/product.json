@@ -50,11 +50,6 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
-        "judge_me_reviews_verified_badge_yNqMGg": {
-          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {}
-        },
         "price_review": {
           "type": "price_review",
           "settings": {
@@ -105,6 +100,7 @@
           "type": "form",
           "settings": {
             "selector_mode": "dropdown",
+            "show_visitors": true,
             "color_mode": "color is-sw-cl__round",
             "enable_fit_ratio_img": true,
             "color_size": "large",
@@ -161,7 +157,7 @@
           "type": "tab_html",
           "settings": {
             "title": "Specification",
-            "content": "<p>Discover Precise Specification for Every Product.</p>",
+            "content": "<p>*</p>",
             "page": ""
           }
         },
@@ -169,8 +165,8 @@
           "type": "tab_html",
           "settings": {
             "title": "Shipping",
-            "content": "<p>Streamlined shipping solutions for a seamless customer experience.</p>",
-            "page": ""
+            "content": "",
+            "page": "shipping"
           }
         },
         "html_3HebXB": {
@@ -264,7 +260,6 @@
         "title",
         "meta",
         "judge_me_reviews_preview_badge_t6Wccz",
-        "judge_me_reviews_verified_badge_yNqMGg",
         "price_review",
         "inventory_qty_zGLDWa",
         "description",
@@ -498,6 +493,19 @@
         "pd_mb": ""
       }
     },
+    "1747310858d896275f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_zxnAh7": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_zxnAh7"
+      ],
+      "settings": {}
+    },
     "accordion_GHYNN8": {
       "type": "accordion",
       "blocks": {
@@ -722,6 +730,7 @@
     "sidebar",
     "174552431977ee2ff9",
     "product-recommendations",
+    "1747310858d896275f",
     "accordion_GHYNN8",
     "recently-viewed-products",
     "newsletter_Y7aLcR"

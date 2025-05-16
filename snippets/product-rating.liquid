@@ -16,5 +16,7 @@
       <div class="scm-reviews-rate t4s-grid-rating" data-rate-version2={{ product.metafields.scm_review_importer.reviewsData.reviewCountInfo | json }} data-product-id= {{ product.id }}></div>
     {%- else -%}
       <div class="t4s-grid-rating t4s-review__grid-other">{%- render 'review_grid_other',product:product -%}</div>
+
+  
 {%- endcase -%}
 </div>

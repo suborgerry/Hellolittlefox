@@ -84,7 +84,7 @@
                       <img data-pr-img class="t4s-product-hover-img lazyloadt4s" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ image2 | image_url: width: 1 }}" data-widths="[100,200,400,600,700,800,900]" data-optimumx="2" data-sizes="auto" width="{{ image2.width }}" height="{{ image2.height }}" alt="{{ image2.alt | escape }}">
                     {%- endif -%}
                     <noscript><img class="t4s-product-main-img" loading="lazy" src="{{ image | image_url: width: 600 }}"  alt="{{ image.alt | escape }}"></noscript>
-                </div>
+                </div> 
                 <div class="t4s-product-info">
                   <div class="t4s-product-info__inner"> 
                      <h3 class="t4s-product-title"><a data-pr-href href="{{pr_url}}">{% if bk_stts.title != blank %}{{bk_stts.title}}{% else %}{{ product.title }}{% endif %}</a></h3>
@@ -101,6 +101,7 @@
                          {%- endif -%}
                        </div>
                      {%- endif -%}
+          
                     {%- if se_stts.show_btn %}
                       <a href="{% if bk_stts.btn_url != blank  %} {{bk_stts.btn_url}} {% else %} {{pr_url}} {% endif %}" class="t4s-product-btn t4s-btn t4s-btn-base t4s-btn-style-{{se_stts.button_style}} t4s-btn-size-{{se_stts.btns_size}} t4s-btn-icon-{{se_stts.btn_icon}} t4s-btn-color-{{se_stts.btns_cl}} {% if se_stts.button_style == 'default' or se_stts.button_style == 'outline'%}t4s-btn-effect-{{se_stts.button_effect}} {% endif %}">{{bk_stts.btn_txt}}
                         {% if se_stts.btn_icon %}
@@ -133,7 +134,7 @@
                         <svg class="t4s-btn-icon"><use xlink:href="#t4s-icon-btn"></use></svg>
                       {% endif %}</a>
                 </div>
-              </div>
+              </div>   
             </div>
           </div>
         </div>
