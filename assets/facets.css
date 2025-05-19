@@ -587,6 +587,7 @@ color: var(--accent-color);
 }
 .t4s-filter-hidden.t4s-drawer .t4s-value-count,
 .t4s-sidebar .t4s-widget .t4s-value-count {
+    display: none;
     margin: 0 5px;
 }
 .t4s-filter-area {
