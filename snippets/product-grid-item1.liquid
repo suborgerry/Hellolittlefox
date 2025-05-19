@@ -88,9 +88,9 @@ if isDefault == false and enable_pr_color or enable_pr_size
 endif -%}
 
 {%- assign page_url = content_for_header | split:'"pageurl":"' | last | split:'"' | first | split: request.host | last | replace:'\/','/' | replace:'%20',' ' | replace:'\u0026','&'  -%}
-{% assign param = blank %}
 {% assign params = blank %}
 {% assign has_color_filter = false %}
+
 {%- for i in (1..1) -%}
 
   {%- unless page_url contains "?" -%}{% break %}{%- endunless -%}
@@ -102,7 +102,8 @@ endif -%}
     {%- if key_and_value.size > 1 -%}
       {% if key_and_value[0] == 'filter.v.option.color' %}
          {% assign has_color_filter = true %}
-        {% assign params = params | append: key_and_value[1] | append: ',' %}
+         {% assign param = key_and_value[1] | downcase |  replace: "+", " "  %}
+        {% assign params = params | append: param | append: ',' %}
       {% endif %}
     {%- endif -%}
   {%- endfor -%}
@@ -110,10 +111,12 @@ endif -%}
 
 {% assign params_obj = params | split: ',' %}
 
-{% comment %} <script>console.log({{ params_obj | json }})</script> {% endcomment %}
+{% assign title_words = product.title | split: ' ' %}
+{% assign firs_word_for_color = title_words[0] | downcase %}
+{% comment %} <script>console.log('{{ has_meta_color | json }}')</script> {% endcomment %}
 
-{% if has_color_filter %}
-   {% if product.title contains params_obj[0] or product.title contains params_obj[1] %}
+{% if has_color_filter and product.metafields.custom.yesy.value != empty %}
+   {% if params_obj[0] contains firs_word_for_color or params_obj[0] contains params_obj[1] %}
       <div class="t4s-product t4s-pr-grid t4s-pr-style1 t4s-pr-{{pid}} {{col}} t4s-col-item" data-product-options='{ "id":"{{pid}}","cusQty":"{{ cus_qty }}","available":{{product.available}}, "handle":"{{product.handle}}", "isDefault": {{isDefault}}, "VariantFirstID": {{current_variant.id}}, "customBadge":{{arr_badge | json }}, "customBadgeHandle":{{arr_badge_handle | json }},"dateStart":{{product.created_at | date: "%s"}}, "compare_at_price":{{current_variant.compare_at_price | json}},"price":{{current_variant.price| json}}, "isPreoder":{{isPreoder}},"isExternal":{{isExternal}}{% if isExternal %},"external_title":{{external_title| json}},"external_link":"{{external_link| escape}}"{% endif %},"image2":{% if product.media[1] != blank %}{{product.media[1] | image_url: width: 1 | json }},"alt":{{product.media[1].alt | escape | json }}{% else %}false{% endif %},"isGrouped":{{isGrouped}},"maxQuantity":{% if isDefault and isPreoder == false %}{{cur_qty}}{% else %}9999{% endif %} }'>
       <div class="t4s-product-wrapper 11">
          <div data-cacl-slide class="t4s-product-inner t4s-pr t4s-oh">

@@ -620,3 +620,7 @@ color: var(--accent-color);
         width: 25%
     }
 }
+
+.t4s-active-filters__count .cp {
+    display: none !important;
+}
