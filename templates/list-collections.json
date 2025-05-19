@@ -64,7 +64,7 @@
             "collection": "linen-canopy1",
             "image": "shopify://shop_images/pale_pink8951_9e19a217-39d6-43ec-a5d7-b80978a9335d.jpg",
             "icon": "las la-gem",
-            "collection_title": "Linen Canopy",
+            "collection_title": "Linen Canopies",
             "collection_link": "shopify://collections/linen-canopy1"
           }
         },
@@ -96,13 +96,43 @@
             "collection_title": "Inventory",
             "collection_link": "shopify://collections/inventory"
           }
+        },
+        "collection_item_zWAURY": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "leaf-mats",
+            "icon": "las la-gem",
+            "collection_title": "Leaf Mats",
+            "collection_link": ""
+          }
+        },
+        "collection_item_Y8Dikb": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "muslin-bed-canopy-1",
+            "icon": "las la-gem",
+            "collection_title": "Muslin Bed Canopies",
+            "collection_link": ""
+          }
+        },
+        "collection_item_cEgYYX": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "linen-curtains",
+            "icon": "las la-gem",
+            "collection_title": "Linen Curtains",
+            "collection_link": ""
+          }
         }
       },
       "block_order": [
         "collection_item_Uxrdab",
         "collection_item_DregPi",
         "collection_item_7H7LCc",
-        "collection_item_HH9JpL"
+        "collection_item_HH9JpL",
+        "collection_item_zWAURY",
+        "collection_item_Y8Dikb",
+        "collection_item_cEgYYX"
       ],
       "settings": {
         "design_heading": "1",
