@@ -64,18 +64,8 @@
             "collection": "linen-canopy1",
             "image": "shopify://shop_images/pale_pink8951_9e19a217-39d6-43ec-a5d7-b80978a9335d.jpg",
             "icon": "las la-gem",
-            "collection_title": "Linen Canopies",
-            "collection_link": "shopify://collections/linen-canopy1"
-          }
-        },
-        "collection_item_DregPi": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "muslin-curtains",
-            "image": "shopify://shop_images/DSC_66411_3340d2af-0b96-46be-95d6-4c775537a9ce.jpg",
-            "icon": "las la-gem",
-            "collection_title": "Muslin Curtains",
-            "collection_link": "shopify://collections/muslin-curtains"
+            "collection_title": "Canopy",
+            "collection_link": "shopify://collections/canopy"
           }
         },
         "collection_item_7H7LCc": {
@@ -110,29 +100,19 @@
           "type": "collection_item",
           "settings": {
             "collection": "muslin-bed-canopy-1",
+            "image": "shopify://shop_images/Lightpink1107.jpg",
             "icon": "las la-gem",
-            "collection_title": "Muslin Bed Canopies",
-            "collection_link": ""
-          }
-        },
-        "collection_item_cEgYYX": {
-          "type": "collection_item",
-          "settings": {
-            "collection": "linen-curtains",
-            "icon": "las la-gem",
-            "collection_title": "Linen Curtains",
-            "collection_link": ""
+            "collection_title": "House bed curtains",
+            "collection_link": "shopify://collections/hhouse-bed-curtains"
           }
         }
       },
       "block_order": [
         "collection_item_Uxrdab",
-        "collection_item_DregPi",
         "collection_item_7H7LCc",
         "collection_item_HH9JpL",
         "collection_item_zWAURY",
-        "collection_item_Y8Dikb",
-        "collection_item_cEgYYX"
+        "collection_item_Y8Dikb"
       ],
       "settings": {
         "design_heading": "1",

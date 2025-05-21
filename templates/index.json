@@ -110,8 +110,9 @@
           "type": "collection_item",
           "settings": {
             "collection": "linen-canopy1",
-            "collection_title": "Linen Canopies",
-            "collection_link": "shopify://collections/linen-canopy1"
+            "image": "shopify://shop_images/2006239546b746a314d4f3c275e5c994b79bb279.png",
+            "collection_title": "Canopy",
+            "collection_link": "shopify://collections/canopy"
           }
         },
         "fb81d2b5-38b4-4322-93fc-cd722f8758f3": {
@@ -119,8 +120,8 @@
           "settings": {
             "collection": "muslin-bed-canopy-1",
             "image": "shopify://shop_images/32fea22d9f7ace3aaa11a9a61c6ffd3cf899f419_7384e31b-fdaa-45eb-8e6b-55e103fde771.png",
-            "collection_title": "Linen House Bed Curtains",
-            "collection_link": "shopify://collections/muslin-bed-canopy-1"
+            "collection_title": "House bed curtains",
+            "collection_link": "shopify://collections/hhouse-bed-curtains"
           }
         },
         "1646035040fee424aa-1": {
@@ -371,11 +372,11 @@
           "settings": {
             "col_dk": "6",
             "col_tb": "6",
-            "text_size": "60,18",
+            "text_size": "30,15",
             "txt_align": "start",
             "sub_heading": "",
             "heading": "",
-            "text": "<p>Welcome to <strong>HelloLittleFox</strong> — a cozy space where imagination meets craftsmanship.<br/><br/>We’re parents to three lively boys who inspire everything we do. Our journey began in 2020, when we set out to create a magical space at home — a place for our kids to play, dream, and feel safe. That’s how our first teepee came to life.<br/><br/>Seeing their joy made us realize the magic of a thoughtfully crafted product. Soon, friends and family wanted one too — and just like that, HelloLittleFox was born.<br/><br/>Since then, we’ve grown from a one-mama project into a small, passionate team. Every piece — from play tents to cushions — is handmade carefully, using high-quality, OEKO-TEX® certified fabrics and safe, sustainable materials because <strong>your little ones deserve the best </strong>❤️</p>",
+            "text": "<p>Welcome to HelloLittleFox — a cozy space where imagination meets craftsmanship.<br/><br/>We’re parents to three lively boys who inspire everything we do. Our journey began in 2020, when we set out to create a magical space at home — a place for our kids to play, dream, and feel safe. That’s how our first teepee came to life.<br/><br/>Seeing their joy made us realize the magic of a thoughtfully crafted product. Soon, friends and family wanted one too — and just like that, HelloLittleFox was born.<br/><br/>Since then, we’ve grown from a one-mama project into a small, passionate team. Every piece — from play tents to cushions — is handmade carefully, using high-quality, OEKO-TEX® certified fabrics and safe, sustainable materials because your little ones deserve the best ❤️</p>",
             "subhd_color": "#222222",
             "hd_color": "#222222",
             "des_color": "#222222",

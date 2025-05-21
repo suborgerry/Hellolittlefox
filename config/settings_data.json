@@ -509,7 +509,7 @@
             "type": "announcement",
             "settings": {
               "link": "",
-              "content": "<p>Free shipping from <strong>$100</strong></p>",
+              "content": "<p>Free shipping from <strong>$200</strong></p>",
               "countdown": "",
               "txt_day": "",
               "dayx": 0
@@ -584,6 +584,23 @@
               "lb_cl": ""
             }
           },
+          "drop_HqQBVW": {
+            "type": "drop",
+            "settings": {
+              "title": "Collections",
+              "url": "",
+              "open_link": "_self",
+              "menu": "collections",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": false,
+              "pos_sub": "bottom-start",
+              "pos": "left"
+            }
+          },
           "base_cm6GYj": {
             "type": "base",
             "settings": {
@@ -614,6 +631,7 @@
         "block_order": [
           "base_mmPW6b",
           "base_XaNJFK",
+          "drop_HqQBVW",
           "base_cm6GYj",
           "base_rTdTyj"
         ],

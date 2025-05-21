@@ -17,7 +17,8 @@
     color:var(--imtxt-des-color);
 }
 .t4s-image-text-des p{
-    line-height: 24px;
+    line-height: 14px;
+  font-size: 14px
 }
 .t4s-image-text-des p a{
     color: var(--accent-color);

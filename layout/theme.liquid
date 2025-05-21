@@ -26,44 +26,66 @@ t4sp-theme t4s-wrapper__{{settings.general_layout}} rtl_{{isRTL}} swatch_color_s
 {%- endcapture -%}
 <html class="{{class_html}} no-js" lang="{{ iso_code }}"{% if isRTL %} dir="rtl"{% endif %}>
   <head>
-    <meta name="p:domain_verify" content="193101b0198c70f89063bdf10cae0ae6"/>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="theme-color" content="{{ settings.body_bg }}">
-    <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    <meta name="trustpilot-one-time-domain-verification-id" content="003405ee-adb4-4a6a-8d48-c9d70f9b3db6"/>
+  <meta name="p:domain_verify" content="193101b0198c70f89063bdf10cae0ae6"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="{{ settings.body_bg }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <meta name="trustpilot-one-time-domain-verification-id" content="003405ee-adb4-4a6a-8d48-c9d70f9b3db6"/>
 
-    {%- if settings.favicon != blank %}<link rel="shortcut icon" type="image/png" href="{{ settings.favicon | image_url: width:32 }}">{% endif -%}
-    {%- if settings.favicon_apple != blank %}<link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="{{ settings.favicon_apple | image_url: width:152 }}">{% endif -%}
+  {%- if settings.favicon != blank %}<link rel="shortcut icon" type="image/png" href="{{ settings.favicon | image_url: width:32 }}">{% endif -%}
+  {%- if settings.favicon_apple != blank %}<link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="{{ settings.favicon_apple | image_url: width:152 }}">{% endif -%}
 
-    {%- if settings.font_source == '1' and settings.fnt_fm_sp1.system? == false or settings.fnt_fm_sp2.system? == false or settings.fnt_fm_sp3.system? == false -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    {%- endif -%}
-    
-    {%- if t_name != 'list-collections' -%}
+  {%- if settings.font_source == '1' and settings.fnt_fm_sp1.system? == false or settings.fnt_fm_sp2.system? == false or settings.fnt_fm_sp3.system? == false -%}
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+  {%- endif -%}
+  
+  {%- if t_name != 'list-collections' -%}
     {%- capture seo_title -%}
-      {%- if template == 'search' and search.performed == true -%}{{ 'search.general.heading' | t: count: search.results_count }}: {{ 'search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}{%- elsif template == 'search.wishlist' %}{{ 'wishlist_page.meta' | t }}{%- elsif template == 'search.compare' %}{{ 'compare_page.meta' | t }}{%- else -%}{{ page_title }}{%- endif -%}
-      {%- if current_tags -%}{%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}{%- endif -%}
-      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{%- endif -%}
+      {%- if template == 'search' and search.performed == true -%}
+        {{ 'search.general.heading' | t: count: search.results_count }}: {{ 'search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}
+      {%- elsif template == 'search.wishlist' -%}
+        {{ 'wishlist_page.meta' | t }}
+      {%- elsif template == 'search.compare' -%}
+        {{ 'compare_page.meta' | t }}
+      {%- else -%}
+        {{ page_title }}
+      {%- endif -%}
+      {%- if current_tags -%}
+        {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+      {%- endif -%}
+      {%- if current_page != 1 -%}
+        &ndash; {{ 'general.meta.page' | t: page: current_page }}
+      {%- endif -%}
       {%- assign escaped_page_title = page_title | escape -%}
-      {%- unless escaped_page_title contains shop.name %} &ndash; {{ shop.name }}{%- endunless -%}
+      {%- unless escaped_page_title contains shop.name -%}
+        &ndash; {{ shop.name }}
+      {%- endunless -%}
     {%- endcapture -%}
-    <title>{{ seo_title | strip }}</title>
-    <meta name="description" content="{{ page_description | default:shop.description | default: shop.name | escape }}">
-    {%- else -%}
-    <title>{{ 'list_collections.meta_title' | t | escape }}</title><meta name="description" content="{{ 'list_collections.meta_description' | t | escape }}">
-    {%- endif -%}
 
-    {%- render 'meta-tags',t_name:t_name -%}
-    
-    <script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
-    <script src="{{ 'global.min.js' | asset_url }}" defer="defer"></script>
-    {{ content_for_header }}
-    {%- render 'head_assets',t_name:t_name,isRTL:isRTL -%}
-    
-  </head>
+    {% if request.path == '/collections' %}
+      <title>Shop All Collections – Handmade Kids Decor | HelloLittleFox</title>
+      <meta name="description" content="Discover all HelloLittleFox collections 🌿 Handmade teepees, canopies & decor for kids ✨ Safe, stylish & sustainable. Find your favorite now!">
+    {% elsif seo_title %}
+      <title>{{ seo_title | strip }}</title>
+      <meta name="description" content="{{ page_description | default: shop.description | default: shop.name | escape }}">
+    {% else %}
+      <title>{{ 'list_collections.meta_title' | t | escape }}</title>
+      <meta name="description" content="{{ 'list_collections.meta_description' | t | escape }}">
+    {% endif %}
+
+  {%- endif -%}  <!-- Ось тут закриваємо if t_name != 'list-collections' -->
+
+  {%- render 'meta-tags', t_name: t_name -%}
+
+  <script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
+  <script src="{{ 'global.min.js' | asset_url }}" defer="defer"></script>
+  {{ content_for_header }}
+  {%- render 'head_assets', t_name: t_name, isRTL: isRTL -%}
+
+</head>
 
   <body class="template-{{ request.page_type | handle }} {{class_lazy}}"{% if body_img != blank %} data-bgset="{{ body_img | image_url: width: 1 }}" data-optimumx="2" data-sizes="auto"{% endif -%}>{% if isRTL %}<script type="text/javascript" id="t4s-flicker-fix">// Flicker fix.</script>{% endif -%}
     <a class="skip-to-content-link visually-hidden" href="#MainContent">{{ "accessibility.skip_to_text" | t }}</a>
