@@ -384,7 +384,7 @@
            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="{{bk_stts.url | default:root_url}}" target="{{bk_stts.open_link}}"{% if bk_stts.cus_cl %} style="color:{{bk_stts.cl}}"{% endif %}>{%- render 'title_menu',bk_stts:bk_stts,showArrow:showArrow -%}</a>
            {%- if linklists[bk_stts.menu].links.size > 0 -%}
            <div id="content_{{blockID}}" class="t4s-sub-menu t4s-pa t4s-op-0 t4s-pe-none">
-              <div class="t4s-lazy_menu">{%- render 'menu_dropdown',handle_menu:bk_stts.menu -%}</div>
+              <div class="t4s-lazy_menu 1">{%- render 'menu_dropdown',handle_menu:bk_stts.menu -%}</div>
            </div>
           {%- endif -%}
         </li>

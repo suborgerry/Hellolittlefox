@@ -42,9 +42,9 @@ bk_stts.lazy_mn and admin_sp == false
 	         {%- if linklists[bk_stts.menu].links.size > 0 -%}
 	         <div id="content_{{blockID}}" class="t4s-sub-menu t4s-pa t4s-op-0 t4s-pe-none">
 	            {%- if admin_sp == false -%}
-	               <div class="t4s-lazy_menu" data-handle="{{bk_stts.menu}}"><div class="t4s-loading--bg"></div></div>
+	               <div class="t4s-lazy_menu 2" data-handle="{{bk_stts.menu}}">{%- render 'menu_dropdown',handle_menu:bk_stts.menu -%}</div>
 	            {%- else -%}
-	               <div class="t4s-lazy_menu">{%- render 'menu_dropdown',handle_menu:bk_stts.menu -%}</div>
+	               <div class="t4s-lazy_menu 3">{%- render 'menu_dropdown',handle_menu:bk_stts.menu -%}</div>
 	            {%- endif -%}
 	         </div>
 	        {%- endif -%}
