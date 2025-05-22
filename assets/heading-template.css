@@ -73,3 +73,8 @@ a.t4s-cl-des-viewm:hover {
     }
    
 }
+
+.page-head .t4s-btn {
+    margin-top: 10px;
+    width: max-content;
+}

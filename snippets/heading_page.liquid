@@ -47,6 +47,10 @@
                   <li class="breadcrumbs__item">{{ heading_title }}</li> 
               </ul>
           </nav> 
+          {%- when 'button' -%}
+            <a href="{{ block.settings.url }}" class="t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
+              {{ block.settings.text }}
+            </a>
         {%- endcase -%} 
       {%- endfor -%}
   {%- endcapture -%}
