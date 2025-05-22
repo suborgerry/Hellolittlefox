@@ -573,6 +573,7 @@
           },
           "base_XaNJFK": {
             "type": "base",
+            "disabled": true,
             "settings": {
               "title": "catalog",
               "url": "shopify://collections",
@@ -587,8 +588,8 @@
           "drop_HqQBVW": {
             "type": "drop",
             "settings": {
-              "title": "Collections",
-              "url": "",
+              "title": "Catalog",
+              "url": "shopify://collections",
               "open_link": "_self",
               "menu": "collections",
               "icon": "",
@@ -1207,25 +1208,24 @@
           },
           "menu_GtWefh": {
             "type": "menu",
-            "disabled": true,
             "settings": {
-              "title": "Heading",
-              "url": "",
+              "title": "Home",
+              "url": "/",
               "open_link": "_self",
               "menu": "",
               "lb": "",
               "lb_cl": "",
-              "icons_op": "2",
+              "icons_op": "0",
               "icon": "las la-chair"
             }
           },
           "mb_nav-1": {
             "type": "menu",
             "settings": {
-              "title": "Shop",
+              "title": "Catalog",
               "url": "shopify://collections",
               "open_link": "_self",
-              "menu": "",
+              "menu": "collections",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
@@ -1247,6 +1247,7 @@
           },
           "25fa7ecf-2db0-4747-b093-a1299099917e": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "title": "Terms of service",
               "url": "shopify://policies/terms-of-service",
@@ -1260,6 +1261,7 @@
           },
           "58800ed8-befe-449a-b8f8-ea86620bef6f": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "title": "Refund policy",
               "url": "shopify://policies/refund-policy",
@@ -1414,9 +1416,9 @@
           "37d41873-33b9-495f-b9e9-261690a26f44": {
             "type": "cat",
             "settings": {
-              "cat": "linen-canopy1",
-              "title": "Linen Canopies",
-              "url": "",
+              "cat": "canopy",
+              "title": "Canopy",
+              "url": "shopify://collections/canopy",
               "menu": "",
               "lb": "",
               "lb_cl": "#e91e63",
@@ -1428,9 +1430,9 @@
           "02afbc74-7e86-47eb-a54c-4b782b9be1ec": {
             "type": "cat",
             "settings": {
-              "cat": "linen-curtains",
-              "title": "Linen Curtains",
-              "url": "",
+              "cat": "hhouse-bed-curtains",
+              "title": "House bed curtains",
+              "url": "shopify://collections/hhouse-bed-curtains",
               "menu": "",
               "lb": "",
               "lb_cl": "#e91e63",
@@ -1441,9 +1443,9 @@
           "a8e444e6-eaae-4fff-a0dd-f13d43abd5f0": {
             "type": "cat",
             "settings": {
-              "cat": "muslin-bed-canopy-1",
-              "title": "Muslin Canopies",
-              "url": "",
+              "cat": "inventory",
+              "title": "Inventory",
+              "url": "shopify://collections/inventory",
               "menu": "",
               "lb": "",
               "lb_cl": "#e91e63",
@@ -1454,9 +1456,9 @@
           "a613ac38-3b02-42a8-8d06-c7fab073ed0c": {
             "type": "catimg",
             "settings": {
-              "cat": "muslin-curtains",
-              "title": "Muslin Curtains",
-              "url": "",
+              "cat": "leaf-mats",
+              "title": "Leaf Mats",
+              "url": "shopify://collections/leaf-mats",
               "lb": "",
               "lb_cl": "#e91e63",
               "icons_op": "1",
@@ -1518,7 +1520,7 @@
             "settings": {
               "cat": "teepee-tents",
               "title": "Teepee Tents",
-              "url": "",
+              "url": "shopify://collections/teepee-tents",
               "lb": "",
               "lb_cl": "#e91e63",
               "icons_op": "2",
