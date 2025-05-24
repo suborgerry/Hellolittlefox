@@ -513,31 +513,121 @@
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Are the products really 100% made from natural materials?",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "title": "<!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->1. Are your products safe for babies?",
+            "content": "<p>Yes! All of our items are handmade using OEKO-TEX® certified fabrics that are breathable, soft, and non-toxic. As parents of three boys, we take safety seriously.<br/><br/></p>"
           }
         },
         "accor_item_qUz8Tf": {
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Are the products really 100% made from natural materials?",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "title": "2. Can I order a custom-made product?",
+            "content": "<p>Absolutely! We love creating custom orders. You can choose the color, size, and design — just send us a message, photo, or sketch, and we’ll make something unique for you.</p>"
           }
         },
         "accor_item_L7xmNW": {
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Are the products really 100% made from natural materials?",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "title": "3. What materials do you use?",
+            "content": "<p>We work with high-quality natural fabrics like cotton muslin and linen, all OEKO-TEX® certified. They’re breathable, sustainable, and perfect for sensitive baby skin.</p>"
+          }
+        },
+        "accor_item_R6b7iq": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "4. How should I care for your products?",
+            "content": "<p>Most items are machine-washable on a gentle cycle. Please check the care instructions in each product description or label for best results.</p>"
+          }
+        },
+        "accor_item_bjdiwM": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "5. How long does it take to make my order?",
+            "content": "<p>We process orders within 1–3 business days. Custom-made items may take a little longer, but we always work carefully and efficiently to deliver your order on time.<br/><br/></p>"
+          }
+        },
+        "accor_item_ie4CUP": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "6. Do you ship internationally?",
+            "content": "<p>Yes, we ship worldwide from Ukraine. We work with trusted delivery partners and provide tracking numbers for all shipments so you can follow your package.</p>"
+          }
+        },
+        "accor_item_qjFXbe": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "7. What if my item arrives damaged or incorrect?",
+            "content": "<p>Please contact us immediately after receiving your order. We’ll offer a replacement, refund, or another solution that works for you. Your satisfaction is our priority.</p>"
+          }
+        },
+        "accor_item_Hmj7KJ": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "8. How long does delivery take?",
+            "content": "<p>Delivery times vary depending on your location and the shipping method. You’ll see estimated timeframes at checkout. Most parcels arrive within 1–3 weeks.</p>"
+          }
+        },
+        "accor_item_brVhG4": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "9. Are your products giftable?",
+            "content": "<p>Definitely! Our handmade pieces are perfect for baby showers, birthdays, and newborn gifts. We can also offer gift wrapping upon request — just leave a note.</p>"
+          }
+        },
+        "accor_item_77bQ3r": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "10. Where are your products made?",
+            "content": "<p>All of our items are handcrafted at our HelloLittleFox studio. What started in 2020 as a one-mama project is now a passionate family-run business.</p>"
+          }
+        },
+        "accor_item_6qtcmY": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "11. Can I return an item if it doesn't work for me?",
+            "content": "<p>Yes, we offer a 30-day return policy. Items must be unused, in original packaging. Email us at support.hellolittlefox@gmail.com, and we’ll assist you.</p>"
+          }
+        },
+        "accor_item_3UaNCU": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "12. What items are non-returnable?",
+            "content": "<p>We can’t accept returns on custom-made or personalized items, sale items, or gift cards. If you’re unsure about a specific product, feel free to ask us first.</p>"
+          }
+        },
+        "accor_item_eTkCb9": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "13. How do I get a refund?",
+            "content": "<p>Once we receive and inspect your return, we’ll notify you. If approved, the refund will be issued to your original payment method. Banks may take a few days to process it.</p>"
           }
         }
       },
       "block_order": [
         "accor_item_jmVNG4",
         "accor_item_qUz8Tf",
-        "accor_item_L7xmNW"
+        "accor_item_L7xmNW",
+        "accor_item_R6b7iq",
+        "accor_item_bjdiwM",
+        "accor_item_ie4CUP",
+        "accor_item_qjFXbe",
+        "accor_item_Hmj7KJ",
+        "accor_item_brVhG4",
+        "accor_item_77bQ3r",
+        "accor_item_6qtcmY",
+        "accor_item_3UaNCU",
+        "accor_item_eTkCb9"
       ],
       "name": "Accordion",
       "settings": {

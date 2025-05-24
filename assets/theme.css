@@ -3498,8 +3498,8 @@ border-radius: 50% !important;
 
 @media and (min-width: 768px) {
   .t4s-filter-static {
-    padding-top: 130px;
-  }
+  padding-top: 130px;
+}
 }
 
 .t4s-filter-static .t4s-drawer__main .t4s-drawer__scroll {
