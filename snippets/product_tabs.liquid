@@ -6,6 +6,7 @@
     - se_stts    : section settings
     - seBlocks   : Array blocks section
     - idTabDes   : ID tab des
+    - isMobile   : true for mobile
     - idTabReview: ID tab review
     - isProductDefault: {Boolean}
     Usage:  tab_des, tab_buy, tab_add, tab_rivui, tab_html, tab_liquid
@@ -37,7 +38,7 @@ assign listTyCurent2 = ''  -%}
 {%- for i in (1..1) -%}
 {%- if tabBlocks.size == 0 %}{% break %}{% endif -%}
 
-<div class="t4s-product-tabs-wrapper t4s-product-tabs-wrapper-{{section.id}} is--tab-design__{{tabs_design}} is--tab-design-mb__{{tabs_design_mb}} is--tab-layout__{{se_stts.tabs_layout_fix}} is--tab-position__{{se_stts.tabs_position}}">
+<div class="{% if isMobile %}mobile{% endif %} t4s-product-tabs-wrapper t4s-product-tabs-wrapper-{{section.id}} is--tab-design__{{tabs_design}} is--tab-design-mb__{{tabs_design_mb}} is--tab-layout__{{se_stts.tabs_layout_fix}} is--tab-position__{{se_stts.tabs_position}}">
   <div class="t4s-container t4s-container-tabs">
 
     {%- if request.design_mode -%}

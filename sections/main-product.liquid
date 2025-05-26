@@ -177,6 +177,8 @@ assign Block_price = seBlocks | where:'type','price_review' | first
 assign block_price_stts = Block_price.settings
 
 assign tabCheck      = false
+assign tabCheck_2      = false
+
 assign idTabDes      = 't4s-tab-des' |append:se_id
 assign idTabReview   = 't4s-tab-review' |append:se_id
 assign tabs_position = se_stts.tabs_position
@@ -459,7 +461,7 @@ endif -%}
                   render 'grouped-form', product: product, bk_stts: bk_stts, pr_se_id: pr_se_id, product_list:product_list, shopify_attributes:block.shopify_attributes, cus_qty: cus_qty
                 endif -%}
             {%- when 'bundle' -%}
-              <div class="t4s-product__bundle">
+              <div class="t4s-product__bundle 1">
                 <p>Build your bundle</p>
                 <div class="t4s-product__bundle-images">
                   {%- for item in product.metafields.bundle.products.value -%}
@@ -496,13 +498,20 @@ endif -%}
                     <div class="bundle_product-checkbox">
                       <label for="bundle_item_{{ forloop.index }}">
                         <input type="checkbox" checked="checked" id="bundle_item_{{ forloop.index }}" />
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="switcher">
+                          <div class="switcher_elem">
+                            <span>ON</span>
+                            <span class="switcher_center"></span>
+                            <span>OFF</span>
+                          </div>
+                        </div>
+                        {% comment %} <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect x="0.5" y="0.5" width="11" height="11" rx="5.5" fill="white" stroke="black"/>
                           <path d="M9.4 4L7.8 5.6C6.47452 6.92548 4.32548 6.92548 3 5.6V5.6" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        </svg> {% endcomment %}
                       </label>
                     </div>
-                    <div class="bundle_product-title">{{ item_b.title }}</div>
+                    <div class="bundle_product-title">{{ item_b.title | truncate: 30 }}</div>
                     <div class="bundle_product-price">
                     {% if item_b.compare_at_price != empty %}<span class="comrare_price">{{ item_b.compare_at_price | money }}</span>{% endif %}
                       <span class="regular_price">{{ item_b.price | money }}</span>
@@ -790,8 +799,12 @@ endif -%}
     </div> 
     {% for block in section.blocks %}
       {% case block.type %}
+      {%- when 'tab_des' or 'tab_add' or 'tab_buy' or 'tab_rivui' or 'tab_liquid' or 'tab_html' -%}
+        {%- if tabCheck_2 or tabs_position == 'external' %}{% continue %}{% endif -%}
+        {%- assign tabCheck_2 = true -%}
+        {%- render 'product_tabs',product:product, se_stts:se_stts, seBlocks: seBlocks, idTabDes:idTabDes, idTabReview:idTabReview, isProductDefault:isProductDefault, isMobile: true -%}
       {%- when 'bundle' -%}
-        <div class="t4s-product__bundle">
+        <div class="t4s-product__bundle 2">
           <div>
           <p>Build your bundle</p>
           <div class="t4s-product__bundle-images">

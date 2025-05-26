@@ -3,7 +3,12 @@
     margin-top: 50px;
 }
 .t4s-collection-header {
-   margin: 40px 0;
+   margin: 15px 0;
+}
+@media screen and (min-width: 990px) {
+    .t4s-collection-header {
+           margin: 40px 0;
+    }
 }
 .t4s-collection-header >:first-child,
 .t4s-collection-header >:last-child { 

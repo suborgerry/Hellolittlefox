@@ -4868,3 +4868,55 @@ shopify-payment-terms {
 .reputon-etsy-reviews-widget header {
   display: none;
 }
+
+.switcher {
+    overflow: hidden;
+    border: 2px solid #a8c8b4;
+    background-color: #a8c8b4;
+    border-radius: 7px;
+    position: relative;
+    height: 29px;
+    width: 100%;
+}
+
+.switcher:hover {
+  cursor: pointer;
+}
+
+.switcher_elem {
+  width: max-content;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  transition: all 0.3s linear;
+}
+
+.switcher_elem span {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+}
+
+.switcher_elem span:last-child {
+  color: #222;
+}
+
+.switcher_elem .switcher_center {
+    width: 10px;
+    height: 100%;
+    display: block;
+    top: 0;
+    background-color: #fff;
+    margin: 0 8px;
+    border-radius: 8px;
+}
+
+.bundle_product-checkbox:not(:has([type="checkbox"]:checked)) .switcher .switcher_elem {
+  left: -28px;
+}
+
+.bundle_product-checkbox:has([type="checkbox"]:checked) .switcher .switcher_elem {
+    left: 2px;
+}
