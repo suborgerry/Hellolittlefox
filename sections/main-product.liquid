@@ -818,12 +818,15 @@ endif -%}
             {%- for item_b in product.metafields.bundle.products.value -%}
             <div class="bundle_product" data-id="{{ item_b.selected_or_first_available_variant.id }}">
               <div class="bundle_product-checkbox">
-                <label for="bundle_item_{{ forloop.index }}">
-                  <input type="checkbox" checked="checked" id="bundle_item_{{ forloop.index }}" />
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="11" height="11" rx="5.5" fill="white" stroke="black"/>
-                    <path d="M9.4 4L7.8 5.6C6.47452 6.92548 4.32548 6.92548 3 5.6V5.6" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                <label for="bundle_item_m_{{ forloop.index }}">
+                  <input type="checkbox" checked="checked" id="bundle_item_m_{{ forloop.index }}" />
+                  <div class="switcher">
+                          <div class="switcher_elem">
+                            <span>ON</span>
+                            <span class="switcher_center"></span>
+                            <span>OFF</span>
+                          </div>
+                        </div>
                 </label>
               </div>
               <div class="bundle_product-title">{{ item_b.title }}</div>
