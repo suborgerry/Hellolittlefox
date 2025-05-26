@@ -32,10 +32,18 @@
             "text_ls_mb": 0,
             "text_mgb_mobile": 0
           }
+        },
+        "button_pVHxPn": {
+          "type": "button",
+          "settings": {
+            "text": "Continue shopping",
+            "url": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
-        "61658221-289a-451c-832e-472e370318ff"
+        "61658221-289a-451c-832e-472e370318ff",
+        "button_pVHxPn"
       ],
       "settings": {
         "use_specify_image": true,
@@ -181,6 +189,8 @@
         "cl_bg_gradient": "",
         "mg": ",,90px,",
         "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
         "mg_mb": ",,50px,",
         "pd_mb": "",
         "use_cus_css": false,
@@ -237,6 +247,8 @@
         "cl_bg_gradient": "",
         "mg": "75px,,50px,",
         "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
         "mg_mb": ",,30px,",
         "pd_mb": ""
       }
