@@ -18,13 +18,15 @@
 
 <link rel="stylesheet" href="{{ 'drawer.min.css' | asset_url }}" media="all">
 <link rel="stylesheet" href="{{ 'facets.css' | asset_url }}" media="all">
+{{ 'product-tabs.css' | asset_url | stylesheet_tag }}
+
 <div data-filter-links id="t4s-filter-hidden" class="t4s-filter-hidden is--t4s-filter-native t4s-drawer t4s-drawer__left" data-section-id="{{ section.id }}">
-   <div class="t4s-drawer__header">
-      <span>{{ 'products.facets.filter_title' | t }}</span>
+   <div class="t4s-drawer__header mobile_accordion">
+      <span><span class="t4s-tab__icon"></span> {{ 'products.facets.filter_title' | t }}</span>
       {% comment %} <button class="t4s-drawer__close" data-drawer-close aria-label="{{ 'search.general.close_search' | t }}"><svg class="t4s-iconsvg-close" role="presentation" viewBox="0 0 16 14"><path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path></svg></button> {% endcomment %}
    </div>
 
-   <div class="t4s-drawer__content">
+   <div class="t4s-drawer__content mobile_accordion_content">
       <div class="t4s-drawer__main">
          <div data-t4s-scroll-me class="t4s-drawer__scroll t4s-current-scrollbar">
             <form id="FacetFiltersForm" data-sidebar-links class="t4s-facets__form t4s-row t4s-g-0">
@@ -172,5 +174,7 @@
 </div>
 
 </div>
+
+<script src="{{ 'mobile_facets.js' | asset_url }}" defer="defer"></script>
 
 {% endunless %}
