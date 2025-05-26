@@ -57,6 +57,8 @@
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                
+                window.location.reload();
             })
             .catch(err => console.error(err))
             .finally(() => {
@@ -76,7 +78,13 @@
     };
 
     add_bundle_btns.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', evt => {
+            const btn = evt.target.closest('button');
+
+            evt.preventDefault();
+
+            console.log(btn);
+
             add_products(btn)
         })
     });

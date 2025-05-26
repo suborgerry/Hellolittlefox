@@ -184,12 +184,15 @@
             {%- for sub_item in item.product.metafields.bundle.products.value -%}
             <div class="bundle_product" data-id="{{ sub_item.first_available_variant.id }}">
               <div class="bundle_product-checkbox">
-                <label for="bundle_item_{{ forloop.index }}">
-                  <input type="checkbox" id="bundle_item_{{ forloop.index }}" />
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="11" height="11" rx="5.5" fill="white" stroke="black"/>
-                    <path d="M9.4 4L7.8 5.6C6.47452 6.92548 4.32548 6.92548 3 5.6V5.6" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
+                <label for="bundle_item_{{ item_id }}_{{ forloop.index }}">
+                  <input type="checkbox" id="bundle_item_{{ item_id }}_{{ forloop.index }}" />
+                  <div class="switcher">
+                          <div class="switcher_elem">
+                            <span>ON</span>
+                            <span class="switcher_center s"></span>
+                            <span>OFF</span>
+                          </div>
+                        </div>
                 </label>
               </div>
               <div class="bundle_product-title">{{ sub_item.title }}</div>
@@ -200,7 +203,7 @@
             </div>
             {%- endfor -%}
           </div>
-          <button id="add_bundle" class="t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top">
+          <button id="add_bundle" type="button" class="t4s-product-form__submit t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center t4s-btn-effect-sweep-to-top">
             <span class="t4s-btn-atc_text">Add BUNDLE to Cart</span>
             <span class="t4s-loading__spinner" hidden="">
               <svg width="16" height="16" hidden="" class="t4s-svg-spinner" focusable="false" role="presentation" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="t4s-path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg>
@@ -208,5 +211,3 @@
           </button>
           </div>
         </div>
-
-        <script src="{{ 'product_bundle.js' | asset_url }}" defer="defer"></script>
