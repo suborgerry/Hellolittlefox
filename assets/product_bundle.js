@@ -41,8 +41,6 @@
 
             const variant_id = bundle_products[count].dataset.id;
 
-            console.log(variant_id);
-
             fetch('/cart/add.js', {
                 method: 'POST',
                 headers: {
@@ -56,9 +54,7 @@
             })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                
-                window.location.reload();
+                console.log(data);                
             })
             .catch(err => console.error(err))
             .finally(() => {
@@ -67,6 +63,7 @@
                 if(count > bundle_products_length) { 
 
                     stop_loading(add_bundle_btn_spiner, add_bundle_btn_svg);
+                    window.location.reload();
                     return;
                 } else {
                     init_adding(add_bundle_btn_spiner, add_bundle_btn_svg);
@@ -78,14 +75,16 @@
     };
 
     add_bundle_btns.forEach(btn => {
+        console.log(btn);
+
         btn.addEventListener('click', evt => {
-            const btn = evt.target.closest('button');
+            const btn_target = evt.target.closest('button');
 
             evt.preventDefault();
 
-            console.log(btn);
+            console.log(btn_target);
 
-            add_products(btn)
+            add_products(btn_target)
         })
     });
     
