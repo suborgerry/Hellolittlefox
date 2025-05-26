@@ -134,6 +134,7 @@
         },
         "properties_ri3BGh": {
           "type": "properties",
+          "disabled": true,
           "settings": {
             "type": "radio",
             "heading": "Add extra text on front: <strong>* (+$10.00)</strong>",

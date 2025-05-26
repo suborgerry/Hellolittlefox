@@ -196,6 +196,14 @@ animation-name: t4s-ani-shake;
   outline: 2px solid #000;
 }
 
-.t4s-line-item-property__field.is--type-radio:has([value="no"]:checked)~.custom-size-personalization {
+.t4s-form__product .custom-size-personalization {
   display: none
+}
+
+.t4s-form__product:has(.is--type-radio) .t4s-line-item-property__field.is--type-radio:not(:has([value="yes"]:checked))~.custom-size-personalization {
+  display: none
+}
+
+.t4s-form__product:has(.t4s-line-item-property__field.is--type-radio) .custom-size-personalization {
+  display: block
 }

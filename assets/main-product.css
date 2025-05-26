@@ -873,6 +873,17 @@ button.t4s-product__description_readm:hover {
 .custom-size-personalization input {
   font-size: 14px;
 }
+.t4s-form__product .custom-size-personalization {
+  display: none
+}
+
+.t4s-form__product:has(.is--type-radio) .t4s-line-item-property__field.is--type-radio:not(:has([value="yes"]:checked))~.custom-size-personalization {
+  display: none
+}
+
+.t4s-form__product:has(.t4s-line-item-property__field.is--type-radio) .custom-size-personalization {
+  display: block
+}
 @media(max-width: 767px) {
   .t4s-product__media-wrapper .t4s-flicky-slider .flickityt4s-prev-next-button.previous {
     left: 0;

@@ -46,6 +46,10 @@
             "show_tags": false
           }
         },
+        "judge_me_reviews_preview_badge_t6Wccz": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "price_review": {
           "type": "price_review",
           "settings": {
@@ -96,6 +100,7 @@
           "type": "form",
           "settings": {
             "selector_mode": "dropdown",
+            "show_visitors": true,
             "color_mode": "color is-sw-cl__round",
             "enable_fit_ratio_img": true,
             "color_size": "large",
@@ -152,7 +157,7 @@
           "type": "tab_html",
           "settings": {
             "title": "Specification",
-            "content": "<p>Discover Precise Specification for Every Product.</p>",
+            "content": "<p>*</p>",
             "page": ""
           }
         },
@@ -160,8 +165,8 @@
           "type": "tab_html",
           "settings": {
             "title": "Shipping",
-            "content": "<p>Streamlined shipping solutions for a seamless customer experience.</p>",
-            "page": ""
+            "content": "",
+            "page": "shipping"
           }
         },
         "html_3HebXB": {
@@ -254,6 +259,7 @@
       "block_order": [
         "title",
         "meta",
+        "judge_me_reviews_preview_badge_t6Wccz",
         "price_review",
         "inventory_qty_zGLDWa",
         "description",
@@ -411,6 +417,7 @@
       "blocks": {
         "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz": {
           "type": "shopify://apps/reputon-etsy-reviews/blocks/carousel-widget-block.product/8df530b9-db50-44f9-a43b-c93c6bac56a9",
+          "disabled": true,
           "settings": {
             "themeId": "light",
             "autoscroll": true,
@@ -420,10 +427,15 @@
             "showAvatar": true,
             "fixedReviewsHeight": false
           }
+        },
+        "judge_me_reviews_verified_badge_VzcC4P": {
+          "type": "shopify://apps/judge-me-reviews/blocks/verified_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
-        "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz"
+        "reputon_etsy_reviews_carousel_widget_block_product_bMpGQz",
+        "judge_me_reviews_verified_badge_VzcC4P"
       ],
       "settings": {}
     },
@@ -481,6 +493,19 @@
         "pd_mb": ""
       }
     },
+    "1747310858d896275f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_zxnAh7": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_zxnAh7"
+      ],
+      "settings": {}
+    },
     "accordion_GHYNN8": {
       "type": "accordion",
       "blocks": {
@@ -488,31 +513,121 @@
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Are the products really 100% made from natural materials?",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "title": "<!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->1. Are your products safe for babies?",
+            "content": "<p>Yes! All of our items are handmade using OEKO-TEX® certified fabrics that are breathable, soft, and non-toxic. As parents of three boys, we take safety seriously.<br/><br/></p>"
           }
         },
         "accor_item_qUz8Tf": {
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Are the products really 100% made from natural materials?",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "title": "2. Can I order a custom-made product?",
+            "content": "<p>Absolutely! We love creating custom orders. You can choose the color, size, and design — just send us a message, photo, or sketch, and we’ll make something unique for you.</p>"
           }
         },
         "accor_item_L7xmNW": {
           "type": "accor_item",
           "settings": {
             "icon": "none",
-            "title": "Are the products really 100% made from natural materials?",
-            "content": "<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>"
+            "title": "3. What materials do you use?",
+            "content": "<p>We work with high-quality natural fabrics like cotton muslin and linen, all OEKO-TEX® certified. They’re breathable, sustainable, and perfect for sensitive baby skin.</p>"
+          }
+        },
+        "accor_item_R6b7iq": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "4. How should I care for your products?",
+            "content": "<p>Most items are machine-washable on a gentle cycle. Please check the care instructions in each product description or label for best results.</p>"
+          }
+        },
+        "accor_item_bjdiwM": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "5. How long does it take to make my order?",
+            "content": "<p>We process orders within 1–3 business days. Custom-made items may take a little longer, but we always work carefully and efficiently to deliver your order on time.<br/><br/></p>"
+          }
+        },
+        "accor_item_ie4CUP": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "6. Do you ship internationally?",
+            "content": "<p>Yes, we ship worldwide from Ukraine. We work with trusted delivery partners and provide tracking numbers for all shipments so you can follow your package.</p>"
+          }
+        },
+        "accor_item_qjFXbe": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "7. What if my item arrives damaged or incorrect?",
+            "content": "<p>Please contact us immediately after receiving your order. We’ll offer a replacement, refund, or another solution that works for you. Your satisfaction is our priority.</p>"
+          }
+        },
+        "accor_item_Hmj7KJ": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "8. How long does delivery take?",
+            "content": "<p>Delivery times vary depending on your location and the shipping method. You’ll see estimated timeframes at checkout. Most parcels arrive within 1–3 weeks.</p>"
+          }
+        },
+        "accor_item_brVhG4": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "9. Are your products giftable?",
+            "content": "<p>Definitely! Our handmade pieces are perfect for baby showers, birthdays, and newborn gifts. We can also offer gift wrapping upon request — just leave a note.</p>"
+          }
+        },
+        "accor_item_77bQ3r": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "10. Where are your products made?",
+            "content": "<p>All of our items are handcrafted at our HelloLittleFox studio. What started in 2020 as a one-mama project is now a passionate family-run business.</p>"
+          }
+        },
+        "accor_item_6qtcmY": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "11. Can I return an item if it doesn't work for me?",
+            "content": "<p>Yes, we offer a 30-day return policy. Items must be unused, in original packaging. Email us at support.hellolittlefox@gmail.com, and we’ll assist you.</p>"
+          }
+        },
+        "accor_item_3UaNCU": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "12. What items are non-returnable?",
+            "content": "<p>We can’t accept returns on custom-made or personalized items, sale items, or gift cards. If you’re unsure about a specific product, feel free to ask us first.</p>"
+          }
+        },
+        "accor_item_eTkCb9": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "13. How do I get a refund?",
+            "content": "<p>Once we receive and inspect your return, we’ll notify you. If approved, the refund will be issued to your original payment method. Banks may take a few days to process it.</p>"
           }
         }
       },
       "block_order": [
         "accor_item_jmVNG4",
         "accor_item_qUz8Tf",
-        "accor_item_L7xmNW"
+        "accor_item_L7xmNW",
+        "accor_item_R6b7iq",
+        "accor_item_bjdiwM",
+        "accor_item_ie4CUP",
+        "accor_item_qjFXbe",
+        "accor_item_Hmj7KJ",
+        "accor_item_brVhG4",
+        "accor_item_77bQ3r",
+        "accor_item_6qtcmY",
+        "accor_item_3UaNCU",
+        "accor_item_eTkCb9"
       ],
       "name": "Accordion",
       "settings": {
@@ -537,103 +652,6 @@
         "cl_bg_gradient": "",
         "mg": ",,50px,",
         "pd": "",
-        "mg_tb": "",
-        "pd_tb": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
-    },
-    "newsletter_Q9CRWF": {
-      "type": "newsletter",
-      "blocks": {
-        "custom_text_j4Aa4Y": {
-          "type": "custom_text",
-          "settings": {
-            "text": "Subscribe to our newsletter",
-            "remove_br_tag": false,
-            "tag": "p",
-            "fontf": "inherit",
-            "text_cl": "#595353",
-            "text_fs": 24,
-            "text_lh": 0,
-            "text_fw": 600,
-            "text_ls": 0,
-            "font_italic": false,
-            "text_shadow": false,
-            "text_mgb": 0,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10
-          }
-        },
-        "custom_text_grpbdU": {
-          "type": "custom_text",
-          "settings": {
-            "text": "Subscribe to our newsletter and get 10% off your first purchase",
-            "remove_br_tag": false,
-            "tag": "p",
-            "fontf": "inherit",
-            "text_cl": "#878787",
-            "text_fs": 14,
-            "text_lh": 24,
-            "text_fw": 400,
-            "text_ls": 0,
-            "font_italic": false,
-            "text_shadow": false,
-            "text_mgb": 30,
-            "hidden_mobile": false,
-            "text_fs_mb": 16,
-            "text_lh_mb": 0,
-            "text_ls_mb": 0,
-            "text_mgb_mobile": 10
-          }
-        },
-        "newsletter_jtTDtA": {
-          "type": "newsletter",
-          "settings": {
-            "form_width": 0,
-            "form_width_mb": 0,
-            "newl_des": "1",
-            "news_align": "center",
-            "newl_size": "small",
-            "btn_icon": false,
-            "input_cl": "#878787",
-            "border_cl": "#000000",
-            "btn_cl": "#ffffff",
-            "btn_bg_cl": "#222222",
-            "btn_hover_cl": "#ffffff",
-            "btn_hover_bg_cl": "#56cfe1",
-            "hidden_mobile": false,
-            "mgb": 15,
-            "mgb_mb": 10
-          }
-        }
-      },
-      "block_order": [
-        "custom_text_j4Aa4Y",
-        "custom_text_grpbdU",
-        "newsletter_jtTDtA"
-      ],
-      "settings": {
-        "design_heading": "1",
-        "heading_align": "t4s-text-center",
-        "top_heading": "",
-        "icon_heading": "las la-gem",
-        "top_subheading": "",
-        "tophead_mb": 30,
-        "content_align": "all-center",
-        "news_overlay": "#000000",
-        "news_overlay_opacity": 0,
-        "layout": "t4s-container-wrap",
-        "cl_bg": "#f6ecea",
-        "cl_bg_gradient": "",
-        "parallax": false,
-        "mg": ",,,",
-        "pd": "50px,,50px,",
         "mg_tb": "",
         "pd_tb": "",
         "mg_mb": ",,30px,",
@@ -697,6 +715,103 @@
         "mg_mb": ",,30px,",
         "pd_mb": ""
       }
+    },
+    "newsletter_Y7aLcR": {
+      "type": "newsletter",
+      "blocks": {
+        "custom_text_4p9yki": {
+          "type": "custom_text",
+          "settings": {
+            "text": "Subscribe to our newsletter",
+            "remove_br_tag": false,
+            "tag": "p",
+            "fontf": "inherit",
+            "text_cl": "#595353",
+            "text_fs": 24,
+            "text_lh": 0,
+            "text_fw": 600,
+            "text_ls": 0,
+            "font_italic": false,
+            "text_shadow": false,
+            "text_mgb": 0,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10
+          }
+        },
+        "custom_text_adLiph": {
+          "type": "custom_text",
+          "settings": {
+            "text": "Subscribe to our newsletter and get 10% off your first purchase",
+            "remove_br_tag": false,
+            "tag": "p",
+            "fontf": "inherit",
+            "text_cl": "#878787",
+            "text_fs": 14,
+            "text_lh": 24,
+            "text_fw": 400,
+            "text_ls": 0,
+            "font_italic": false,
+            "text_shadow": false,
+            "text_mgb": 30,
+            "hidden_mobile": false,
+            "text_fs_mb": 16,
+            "text_lh_mb": 0,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 10
+          }
+        },
+        "newsletter_Tpwrkp": {
+          "type": "newsletter",
+          "settings": {
+            "form_width": 0,
+            "form_width_mb": 0,
+            "newl_des": "1",
+            "news_align": "center",
+            "newl_size": "small",
+            "btn_icon": false,
+            "input_cl": "#878787",
+            "border_cl": "#000000",
+            "btn_cl": "#ffffff",
+            "btn_bg_cl": "#222222",
+            "btn_hover_cl": "#ffffff",
+            "btn_hover_bg_cl": "#56cfe1",
+            "hidden_mobile": false,
+            "mgb": 15,
+            "mgb_mb": 10
+          }
+        }
+      },
+      "block_order": [
+        "custom_text_4p9yki",
+        "custom_text_adLiph",
+        "newsletter_Tpwrkp"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "content_align": "all-center",
+        "news_overlay": "#000000",
+        "news_overlay_opacity": 0,
+        "layout": "t4s-container-wrap",
+        "cl_bg": "#f6ecea",
+        "cl_bg_gradient": "",
+        "parallax": false,
+        "mg": ",,,",
+        "pd": "50px,,50px,",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
     }
   },
   "order": [
@@ -705,8 +820,9 @@
     "sidebar",
     "174552431977ee2ff9",
     "product-recommendations",
+    "1747310858d896275f",
     "accordion_GHYNN8",
-    "newsletter_Q9CRWF",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "newsletter_Y7aLcR"
   ]
 }
